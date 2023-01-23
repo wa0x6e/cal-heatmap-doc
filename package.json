@@ -26,6 +26,7 @@
   "devDependencies": {
     "@docusaurus/module-type-aliases": "2.2.0",
     "@tsconfig/docusaurus": "^1.0.5",
+    "cz-conventional-changelog": "^3.3.0",
     "typescript": "^4.7.4"
   },
   "browserslist": {
@@ -42,5 +43,10 @@
   },
   "engines": {
     "node": ">=16.14"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

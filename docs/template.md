@@ -69,10 +69,11 @@ type TemplateResult = {
 
 Name of the subDomain type.
 
-Will be used by [`subDomain.type`](/options/subDomain.html#type) options, and child template.
+Will be used by [`subDomain.type`](/options/subDomain.md#type) options, and child template.
 
-{: .highlight}
+:::caution
 Name should be unique
+:::
 
 ### parent
 
@@ -148,8 +149,9 @@ This function is used to bind your data to a subDomain
   the timestamp for `9:15AM`
 - If each subDomain is a weekday, the function should return the timestamp for the start of that day (`00:00AM`), and return `null` for a weekend.
 
-{: .highlight}
+:::tip
 Take a look at the built-in templates on the [github](https://github.com/wa0x6e/cal-heatmap/tree/master/src/calendar/templates) repository, for real-world examples.
+:::
 
 <hr/>
 
@@ -158,8 +160,6 @@ Take a look at the built-in templates on the [github](https://github.com/wa0x6e/
 ### Quarter subDomain template
 
 Each subDomain represent 3 months.
-
-You can see a the final result [here](/api/addTemplates)
 
 ```js
 const quarterTemplate = function (DateHelper) {
@@ -225,4 +225,4 @@ cal.paint({
 
 ### Days subDomain, showinng only the weekdays
 
-See [Example](examples.html#dow-jones-industrial-trading-volume)
+See [Showcase](/showcase.md)

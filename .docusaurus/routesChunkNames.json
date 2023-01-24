@@ -49,7 +49,7 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-baf": {
+  "/docs-00d": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
       "plugin": "plugin---docsfe-9-95f"
@@ -107,6 +107,10 @@
   "/docs/events-041": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-eventsd-70-861"
+  },
+  "/docs/getting-started/browser-support-06b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-getting-started-browser-supporta-7-f-62f"
   },
   "/docs/getting-started/installation-490": {
     "__comp": "__comp---theme-doc-item-178-a40",

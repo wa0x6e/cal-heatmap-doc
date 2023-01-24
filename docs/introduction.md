@@ -15,23 +15,9 @@ Cal-Heatmap is a javascript library to create a calendar heatmap.
 - Full color customisation
 - Animation
 - Extension via plugins
+- Typescript
 
 See the [examples](/examples) section
-
-## Browsers support
-
-### Desktop
-
-- Google Chrome 95+
-- Mozilla Firefox 95+
-- Microsoft Edge 95+
-- Safari 14.1+
-
-### Mobile
-
-- Google Chrome Android 7+
-- Samsung Internet Android 7+
-- Safari iOS 14+
 
 ## Licence
 

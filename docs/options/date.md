@@ -97,11 +97,7 @@ For performance reasons, only the `en` locale is included by default, and
 all other locales are loaded on-demand. You can save a few milliseconds by
 including the dayjs locale script directly in your `<head>`, e.g. `<script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/zh-cn.js"></script>`
 
-#### Example with the french locale
-
-<BrowserWindow>
-
-```js
+```js title="Using the french locale"
 const cal = new CalHeatmap();
 cal.paint({
   domain: { type: 'month' },
@@ -109,8 +105,6 @@ cal.paint({
   date: { locale: 'fr' },
 });
 ```
-
-</BrowserWindow>
 
 ## `timezone`
 

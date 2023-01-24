@@ -1,47 +1,34 @@
 ---
 title: Quick Start
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 import BrowserWindow from '@site/src/components/BrowserWindow';
 
 # Quick start
 
-After [installing](/install.html) the script:
-
-- insert `<div id="cal-heatmap"></div>` where you want to render the calendar in your page
-- create a calendar instance
-- paint the calendar with your desired options/plugins.
-
-## Examples
-
-<BrowserWindow>
-
-```jsx live noInline
-const cal = new CalHeatmap();
-cal.paint();
-render(<div id="cal-heatmap"></div>);
-```
-
-</BrowserWindow>
+1. [Install](/getting-started/installation.md) the script
+2. Insert `<div id="cal-heatmap"></div>` where you want to render the calendar in your page
+3. Instantiate and paint the calendar with your desired options/plugins
 
 <BrowserWindow>
 
 ```jsx live noInline
 const cal = new CalHeatmap();
 cal.paint({
-  itemSelector: '#qs-2',
   date: { start: new Date(2020, 0, 15) },
   domain: { type: 'month' },
   subDomain: { type: 'day' },
 });
-render(<div id="qs-2"></div>);
+render(<div id="cal-heatmap"></div>);
 ```
 
 </BrowserWindow>
 
-You can customize the calendar by passing an [`Options`](/options/) object and/or
-a [Plugins list](/plugins/) to [`paint()`](/api/paint.html).
+:::note
+You can customize the calendar by passing an [`Options`](/options/index.md) object and/or
+a [Plugins list](/plugins/index.md) to [`paint()`](/API/paint.md).
+:::
 
 :::tip
 

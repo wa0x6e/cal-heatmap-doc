@@ -4,37 +4,75 @@ description: How to install Cal-Heatmap via CDN or NPM
 sidebar_position: 1
 ---
 
-# Installation
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-## CDN
+## Install
 
-Install the library and its dependencies in your page `head`.
+```mdx-code-block
+<Tabs>
+  <TabItem value="cdn" label="CDN" default>
+```
 
-### Dependencies
+Install the dependencies in your page `<head>`.
 
 ```html
 <script src="https://d3js.org/d3.v7.min.js"></script>
+<!-- v6 is also supported -->
+<script src="https://d3js.org/d3.v6.min.js"></script>
 ```
 
-Although v7 is recommended, `d3js >= 6` is supported.
-
-### CalHeatmap
+Install the library in your page `<head>`.
 
 ```html
 <script src="https://unpkg.com/cal-heatmap@4.0.0-beta.4/dist/cal-heatmap.min.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/cal-heatmap@4.0.0-beta.4/dist/cal-heatmap.css"></script>
 ```
 
-## Package Manager
-
-### Using NPM
+```mdx-code-block
+ </TabItem>
+ <TabItem value="npm" label="NPM">
+```
 
 ```
 npm install cal-heatmap@4.0.0-beta.4
 ```
 
-Once installed, you can import the library using ES6 `import`:
+```mdx-code-block
+  </TabItem>
+</Tabs>
+```
 
-```js
-import CalHeatmap from 'cal-heatmap';
+## Distribution target
+
+Cal-Heatmap is distributed in 2 different file formats.
+
+- `esm` (works with `import` syntax — recommended)
+- `umd` (works with `<script>` tags or RequireJS)
+
+Each file formats is also shipped in regular and minified/compressed version with [Terser](https://github.com/terser/terser).
+
+The bundle files are located in the `dist` folder, and code source in `src`.
+
+```
+cal-heatmap
+├── dist
+│   ├── cal-heatmap.js
+│   ├── cal-heatmap.min.js
+│   ├── cal-heatmap.esm.js
+│   └── cal-heatmap.min.esm.js
+│   └── cal-heatmap.css
+│   ├── plugins
+│   │   └── Legend.js
+│   │   └── Legend.min.js
+│   │   └── Legend.esm.js
+│   │   └── Legend.min.esm.js
+│   │   └── Tooltip.js
+│   │   └── Tooltip.min.js
+│   │   └── Tooltip.esm.js
+│   │   └── Tooltip.min.esm.js
+├── src
+│   ├── cal-heatmap.js
+│   ├── ....
+
 ```

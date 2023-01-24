@@ -3,6 +3,8 @@ title: subDomain
 sidebar_position: 4
 ---
 
+import BrowserWindow from '@site/src/components/BrowserWindow';
+
 Specify all options related to the subDomain configuration
 
 ```js
@@ -24,7 +26,7 @@ type subDomain: {
 
 <hr/>
 
-## type
+## `type`
 
 SubDomain's type, representing a time unit
 
@@ -34,7 +36,7 @@ type: string,
 
 The `subDomain` should always be smaller than the `domain` type.
 
-### Available default subDomains type
+### Built-in types
 
 - `month`
 - `week`
@@ -43,12 +45,11 @@ The `subDomain` should always be smaller than the `domain` type.
 - `hour`
 - `minute`
 
-See [Examples](/examples)
+:::tip
+You can create and add your own custom subDomain type, see the [`Template`](/template.md) section.
+:::
 
-{: .note}
-You can create and add your own custom subDomain, see the [`Templates`](/templates) section.
-
-## gutter
+## `gutter`
 
 Space between each subDomain, in pixel
 
@@ -58,7 +59,22 @@ gutter: number,
 
 Default: `2`
 
-## width
+<BrowserWindow>
+
+```jsx live noInline
+const cal = new CalHeatmap();
+// Change the gutter value to see result
+cal.paint({
+  itemSelector: '#example-gutter',
+  subDomain: { gutter: 2 },
+});
+
+render(<div id="example-gutter"></div>);
+```
+
+</BrowserWindow>
+
+## `width`
 
 Width of each subDomain cell, in pixel
 
@@ -68,7 +84,22 @@ width: number,
 
 Default: `10`
 
-## height
+<BrowserWindow>
+
+```jsx live noInline
+const cal = new CalHeatmap();
+// Change the width value to see result
+cal.paint({
+  itemSelector: '#example-width',
+  subDomain: { width: 10 },
+});
+
+render(<div id="example-width"></div>);
+```
+
+</BrowserWindow>
+
+## `height`
 
 Height of each subDomain cell, in pixel
 
@@ -78,7 +109,22 @@ height: number,
 
 Default: `10`
 
-## radius
+<BrowserWindow>
+
+```jsx live noInline
+const cal = new CalHeatmap();
+// Change the height value to see result
+cal.paint({
+  itemSelector: '#example-height',
+  subDomain: { height: 10 },
+});
+
+render(<div id="example-height"></div>);
+```
+
+</BrowserWindow>
+
+## `radius`
 
 Border radius of each subDomain cell, in pixel
 
@@ -88,7 +134,22 @@ radius: number,
 
 Default: `0`
 
-## label
+<BrowserWindow>
+
+```jsx live noInline
+const cal = new CalHeatmap();
+// Change the radius value to see result
+cal.paint({
+  itemSelector: '#example-radius',
+  subDomain: { radius: 2 },
+});
+
+render(<div id="example-radius"></div>);
+```
+
+</BrowserWindow>
+
+## `label`
 
 Label of the subDomain
 
@@ -109,16 +170,20 @@ This option accepts different value's type, see table below for usage.
 | `null`     | Do not show any label                                                                                                            | `null`                                                                                            |                                        |
 | `function` | Display the function's return value. The function takes the subDomain's timestamp, value and the label's SVG Element as argument | `` function (timestamp, value) { return `${value} items on ${new Date(date).toISOString()}`; } `` | `50 items on 2022-12-06T20:01:51.290Z` |
 
-{: .note}
+:::tip
 dayjs `format()` is [`locale`](/options/date.html#locale) and timezone aware.
+:::
 
-{: .note }
+:::caution
 Depending on your chosen cell size, subDomain label may overflow
+:::
 
+:::tip
 You can customize the style of the subDomain label text via css, or by
 manipulating the `SVGElement` given as argument when using a `function`.
+:::
 
-## color
+## `color`
 
 Color of the subDomain's label
 

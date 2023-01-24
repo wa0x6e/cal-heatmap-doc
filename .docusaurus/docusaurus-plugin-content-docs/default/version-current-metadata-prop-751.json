@@ -32,6 +32,12 @@
             "label": "Quick Start",
             "href": "/docs/getting-started/quickstart",
             "docId": "getting-started/quickstart"
+          },
+          {
+            "type": "link",
+            "label": "Browser support",
+            "href": "/docs/getting-started/browser-support",
+            "docId": "getting-started/browser-support"
           }
         ],
         "href": "/docs/category/getting-started"
@@ -300,6 +306,12 @@
       "description": "Listen for events emitted by the calendar",
       "sidebar": "tutorialSidebar"
     },
+    "getting-started/browser-support": {
+      "id": "getting-started/browser-support",
+      "title": "Browser support",
+      "description": "How to install Cal-Heatmap via CDN or NPM",
+      "sidebar": "tutorialSidebar"
+    },
     "getting-started/installation": {
       "id": "getting-started/installation",
       "title": "Installation",
@@ -309,7 +321,7 @@
     "getting-started/quickstart": {
       "id": "getting-started/quickstart",
       "title": "Quick Start",
-      "description": "After installing the script:",
+      "description": "1. Install the script",
       "sidebar": "tutorialSidebar"
     },
     "introduction": {

@@ -3,6 +3,8 @@ title: domain
 sidebar_position: 3
 ---
 
+import BrowserWindow from '@site/src/components/BrowserWindow';
+
 Specify all options related to the domain configuration
 
 ```js
@@ -49,6 +51,18 @@ gutter: number;
 
 Default: `4`
 
+<BrowserWindow>
+
+```jsx live noInline
+const cal = new CalHeatmap();
+// Change the gutter value to see result
+cal.paint({ itemSelector: '#example-gutter', domain: { gutter: 4 } });
+
+render(<div id="example-gutter"></div>);
+```
+
+</BrowserWindow>
+
 ## `padding`
 
 Padding inside each domain, in pixel
@@ -60,6 +74,21 @@ padding: [number, number, number, number];
 Expect an array of 4 numbers, in the same order as CSS padding property (top, right, bottom, left)
 
 Default: `[0, 0, 0, 0]`
+
+<BrowserWindow>
+
+```jsx live noInline
+const cal = new CalHeatmap();
+// Change the padding value to see result
+cal.paint({
+  itemSelector: '#example-padding',
+  domain: { padding: [0, 0, 0, 0] },
+});
+
+render(<div id="example-padding"></div>);
+```
+
+</BrowserWindow>
 
 ## `dynamicDimension`
 
@@ -115,6 +144,22 @@ sort: 'asc' | 'desc';
 ```
 
 Default: `asc`
+
+<BrowserWindow>
+
+```jsx live noInline
+const cal = new CalHeatmap();
+// Change the sort value to see result
+cal.paint({
+  itemSelector: '#example-sort',
+  domain: { type: 'day', sort: 'asc' },
+  subDomain: { type: 'hour' },
+});
+
+render(<div id="example-sort"></div>);
+```
+
+</BrowserWindow>
 
 :::info Option scope
 This only affect the domain's order, not the subDomain.

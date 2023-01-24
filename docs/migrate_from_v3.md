@@ -157,7 +157,7 @@ Use a custom `date.locale`, or a custom Template.
 
 ### `legend`, `displayLegend`, `legendCellSize`, `legendCellPadding`, `legendCellMargin`, `legendVerticalPosition`, `legendHorizontalPosition`, `legendOrientation`, `legendTitleFormat`
 
-Removed, migrated to [Legend](/plugins/Legend) plugin
+Removed, migrated to [Legend](/plugins/legend.md) plugin
 
 ### `legendColors`
 
@@ -169,7 +169,7 @@ Removed, use Tooltip `text`
 
 ### `tooltip`
 
-Removed, migrated to [Tooltip](/plugins/tooltip.html) plugin.
+Removed, migrated to [Tooltip](/plugins/tooltip.md) plugin.
 
 ### `afterLoadData`
 
@@ -178,7 +178,7 @@ and accept an array of object, just like d3.js. See `data.x`, `data.y` and `data
 
 `colLimit`, `rowLimit`
 
-To customize the layout of the subDomains, a new [`Template`](/templates.html) system has been introduced
+To customize the layout of the subDomains, a new [`Template`](/template.md) system has been introduced
 
 `nextSelector`, `previousSelector`
 
@@ -197,7 +197,7 @@ Obsolete, was only used internally to namespace the `nextSelector` and `previous
 
 - `on(eventName, callback)` has been added, to replace all old callback functions.
 
-See [Events](/events.html) for the complete list of events
+See [Events](/events.md) for the complete list of events
 
 ### `afterLoad` and `onComplete` removed
 

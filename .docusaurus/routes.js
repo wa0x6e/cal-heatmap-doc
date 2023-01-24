@@ -44,7 +44,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'baf'),
+    component: ComponentCreator('/docs', '00d'),
     routes: [
       {
         path: '/docs/API/',
@@ -121,6 +121,12 @@ export default [
       {
         path: '/docs/events',
         component: ComponentCreator('/docs/events', '041'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/docs/getting-started/browser-support',
+        component: ComponentCreator('/docs/getting-started/browser-support', '06b'),
         exact: true,
         sidebar: "tutorialSidebar"
       },

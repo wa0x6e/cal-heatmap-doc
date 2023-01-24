@@ -352,6 +352,35 @@
               }
             },
             {
+              "unversionedId": "getting-started/browser-support",
+              "id": "getting-started/browser-support",
+              "title": "Browser support",
+              "description": "How to install Cal-Heatmap via CDN or NPM",
+              "source": "@site/docs/getting-started/browser-support.md",
+              "sourceDirName": "getting-started",
+              "slug": "/getting-started/browser-support",
+              "permalink": "/docs/getting-started/browser-support",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/browser-support.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "Browser support",
+                "description": "How to install Cal-Heatmap via CDN or NPM",
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Quick Start",
+                "permalink": "/docs/getting-started/quickstart"
+              },
+              "next": {
+                "title": "Options",
+                "permalink": "/docs/options/"
+              }
+            },
+            {
               "unversionedId": "getting-started/installation",
               "id": "getting-started/installation",
               "title": "Installation",
@@ -384,7 +413,7 @@
               "unversionedId": "getting-started/quickstart",
               "id": "getting-started/quickstart",
               "title": "Quick Start",
-              "description": "After installing the script:",
+              "description": "1. Install the script",
               "source": "@site/docs/getting-started/quickstart.md",
               "sourceDirName": "getting-started",
               "slug": "/getting-started/quickstart",
@@ -393,10 +422,10 @@
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/quickstart.md",
               "tags": [],
               "version": "current",
-              "sidebarPosition": 3,
+              "sidebarPosition": 2,
               "frontMatter": {
                 "title": "Quick Start",
-                "sidebar_position": 3
+                "sidebar_position": 2
               },
               "sidebar": "tutorialSidebar",
               "previous": {
@@ -404,8 +433,8 @@
                 "permalink": "/docs/getting-started/installation"
               },
               "next": {
-                "title": "Options",
-                "permalink": "/docs/options/"
+                "title": "Browser support",
+                "permalink": "/docs/getting-started/browser-support"
               }
             },
             {
@@ -645,8 +674,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Quick Start",
-                "permalink": "/docs/getting-started/quickstart"
+                "title": "Browser support",
+                "permalink": "/docs/getting-started/browser-support"
               },
               "next": {
                 "title": "itemSelector",
@@ -920,11 +949,15 @@
                   {
                     "type": "doc",
                     "id": "getting-started/quickstart"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "getting-started/browser-support"
                   }
                 ],
                 "link": {
                   "type": "generated-index",
-                  "description": "5 minutes to learn the most important Docusaurus concepts.",
+                  "description": "Install and create your first calendar in less than 5 minutes.",
                   "slug": "/category/getting-started",
                   "permalink": "/docs/category/getting-started"
                 }

@@ -71,6 +71,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "getting-started/browser-support",
+              "path": "/docs/getting-started/browser-support",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "getting-started/installation",
               "path": "/docs/getting-started/installation",
               "sidebar": "tutorialSidebar"

@@ -24,9 +24,7 @@ There is no expected pre-defined structure for the object,
 but it must at least have one or more property for the date,
 and another one for the value.
 
-#### Example #1
-
-```js
+```js title="Classic object"
 [
   { date: '2012-01-01', value: 3 },
   { date: '2012-01-02', value: 6 },
@@ -34,9 +32,7 @@ and another one for the value.
 ];
 ```
 
-#### Example #2
-
-```js
+```js title="Using timestamp"
 [
   { t: 1673388319933, p: 3, v: 58 },
   { t: 1673388319934, p: 6, v: 1 },
@@ -44,11 +40,9 @@ and another one for the value.
 ];
 ```
 
-#### Example #2
-
-```js
+```js title="Using multiple properties to define a date"
 [
-  { year: 2020, month: 1, day: 1, temp: 38 },
+  { year: 2020, month: 1, day: 1, temperature: 38 },
   ...
 ];
 ```
@@ -58,7 +52,7 @@ how to fetch, read and extract the date and value from your dataset.
 
 <hr/>
 
-## source
+## `source`
 
 Data used to populate the calendar.
 
@@ -68,21 +62,24 @@ source: string | DataRecord[],
 
 There are 2 ways to pass your data to the calendar:
 
-### Pass your data directly
+### Using a local object
 
 ```js
+// highlight-start
 const data = [
   { date: '2012-01-01', value: 3 },
   { date: '2012-01-02', value: 6 },
 ];
+// highlight-end
 
 const cal = new CalHeatmap();
 cal.paint({
+  // highlight-next-line
   data: { source: data },
 });
 ```
 
-### Instruct the calendar to fetch it
+### Fetching data from a remote source
 
 A `string` value will be interpreted as an url, and the data
 will be retrieved via a `GET` request.
@@ -90,6 +87,7 @@ will be retrieved via a `GET` request.
 ```js
 const cal = new CalHeatmap();
 cal.paint({
+  // highlight-next-line
   data: { source: 'https://your-api.com/data.json' },
 });
 ```
@@ -107,13 +105,18 @@ in order to limit the data time range from your remote source.
 - `start` refers to the start of the first subDomain of the calendar
 - `end` refers to the end of the last subDomain of the calendar
 
-The tokens' value will dynamically update on [navigation](/api/navigation).
+:::note
+The `start` and `end` time range are both inclusive.
+:::
 
-#### Example usage
+:::tip
+The tokens' value will dynamically update on [navigation](/API/navigation/index.md).
+:::
 
-```js
+```js title="Usage"
 const cal = new CalHeatmap();
 cal.paint({
+  // highlight-next-line
   data: { source: 'https://your-api.com/data?start={t:start}&end{t:end}' },
 });
 ```
@@ -121,7 +124,7 @@ cal.paint({
 If the remote source is behind authentication, or requires additional request
 customization, see [requestInit](#requestinit).
 
-## type
+## `type`
 
 Parser used to interpret the data returned by your url source.
 
@@ -129,14 +132,15 @@ Parser used to interpret the data returned by your url source.
 type: 'json' | 'csv' | 'tsv' | 'txt',
 ```
 
-The parser will interpret the data, and convert it to an array of objects.
+The parser will interpret the data, and convert it to an array of DataRecord.
 
 Default: `json`
 
-{: .note}
-This option is used only when the `source` is an url.
+:::note
+This option is used only when the [`source`](#source) is an url.
+:::
 
-## requestInit
+## `requestInit`
 
 Additional [requestInit](https://fetch.spec.whatwg.org/#requestinit) options, send along your data request.
 
@@ -144,10 +148,26 @@ Additional [requestInit](https://fetch.spec.whatwg.org/#requestinit) options, se
 
 Default: `{}`
 
-{: .note}
+:::note
 This option is used only when the `source` is an url.
+:::
 
-## x
+```js title="Usage"
+{
+    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+    mode: 'cors', // no-cors, *cors, same-origin
+    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: 'same-origin', // include, *same-origin, omit
+    headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    redirect: 'follow', // manual, *follow, error
+    referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+  }
+```
+
+## `x`
 
 Property name of the date, or a function returning a timestamp.  
 Instruct the calendar how to extract the _date_ property from your data.
@@ -165,40 +185,48 @@ You can either pass a:
 #### Example
 
 ```js title="Extract date using property name"
+// highlight-next-line
 var data = [{ column1: '2012-01-01', column2: 3 }];
 
 cal.paint({
+  // highlight-next-line
   data: { source: data, x: 'column1' },
 });
 ```
 
 ```js title="Extract date using a custom function"
+// highlight-next-line
 var data = [{ column1: '2012-01-01', column2: 3 }];
 
 cal.paint({
   data: {
     source: data,
+    // highlight-start
     x: datum => {
       return +new Date(datum['column1']);
     },
+    // highlight-end
   },
 });
 ```
 
 ```js title="Compute date from multiple properties"
+// highlight-next-line
 var data = [{ year: 2020, month: 1, value: 3 }];
 
 cal.paint({
   data: {
     source: data,
+    // highlight-start
     x: datum => {
       return +new Date(datum['year'], datum['month'] - 1, 1);
     },
+    // highlight-end
   },
 });
 ```
 
-## y
+## `y`
 
 Property name of the the value, or a function returning the value.  
 Instruct the calendar how to extract the _value_ property from your data.
@@ -215,28 +243,33 @@ You can either pass a:
 #### Example
 
 ```js title="Extract value using property name"
+// highlight-next-line
 var data = [{ column1: '2012-01-01', column2: 3 }];
 
 cal.paint({
+  // highlight-next-line
   data: { source: data, y: 'column2' },
 });
 ```
 
 ```js title="Extract value using a built-in function"
+// highlight-next-line
 var data = [{ date: '2012-01-01', high: '30', low: '16' }];
 
 cal.paint({
   data: {
     source: data,
+    // highlight-start
     y: datum => {
       // You can use the function to pre-process your values
       return +datum['high'] + +datum['low']) / 2;
     },
+    // highlight-end
   },
 });
 ```
 
-## groupY
+## `groupY`
 
 Aggregate function, to group all values from the same subDomain.
 
@@ -269,6 +302,7 @@ cal.paint({
     source: data,
     x: 'column1',
     y: 'column2',
+    // highlight-next-line
     groupY: 'sum',
   },
 });
@@ -280,9 +314,11 @@ cal.paint({
     source: data,
     x: 'column1',
     y: 'column2',
+    // highlight-start
     groupY: data => {
       return data.reduce((a, b) => a + b, 0);
     },
+    // highlight-end
   },
 });
 ```

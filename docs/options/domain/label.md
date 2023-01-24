@@ -21,7 +21,7 @@ type LabelOptions: {
 
 <hr />
 
-## text
+## `text`
 
 Specify the label's content
 
@@ -40,10 +40,11 @@ This option accepts different value's type, see table below for usage.
 | `null`      | Do not show any label                                                                                                  | `null`                                                          |                            |
 | `function`  | Display the function's return value. The function takes the domain's timestamp and the label's SVG Element as argument | `function (timestamp) { return new Date(date).toISOString(); }` | `2022-12-06T20:01:51.290Z` |
 
-{: .note}
+:::tip
 dayjs `format()` is [`locale`](/options/date.html#locale) and timezone aware.
+:::
 
-## position
+## `position`
 
 Position of the label, relative to its domain
 
@@ -53,7 +54,7 @@ position: 'top' | 'right' | 'bottom' | 'left',
 
 Default: `bottom`
 
-## textAlign
+## `textAlign`
 
 Horizontal alignment of the label
 
@@ -63,18 +64,18 @@ textAlign: 'start' | 'middle' | 'end',
 
 Default: `middle`
 
-## offset
+## `offset`
 
 Further customize the label placement along its x and y axis
 
 ```js
 offset: {
-    x: number, // in pixels
-    y: number, // in pixels
-  },
+  x: number, // in pixels
+  y: number, // in pixels
+},
 ```
 
-## rotate
+## `rotate`
 
 Rotate to obtain a vertical label
 
@@ -84,7 +85,7 @@ rotate: null | 'left' | 'right',
 
 Default: `null`
 
-## width
+## `width`
 
 Width of the label, in pixel
 
@@ -94,11 +95,12 @@ width: number,
 
 Default: `100`
 
-{: .note}
-Ignored when `position` is set to `top` or `bottom`.
+:::note
+Ignored when [`position`](#position) is set to `top` or `bottom`.
 In these cases, the width is capped to the domain width.
+:::
 
-## height
+## `height`
 
 Height of the label, in pixel
 
@@ -108,6 +110,7 @@ height: number,
 
 Default: `25`
 
-{: .note}
-Ignored when `position` is set to `left` or `right`.
+:::note
+Ignored when [`position`](#position) is set to `left` or `right`.
 In these cases, the height is capped to the domain height.
+:::

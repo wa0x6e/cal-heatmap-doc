@@ -28,3 +28,20 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+[data-theme='dark'] .cal-heatmap-container .graph-rect {
+  fill: #444950;
+}
+
+[data-theme='dark'] .cal-heatmap-container .graph-subdomain-group rect:hover {
+  stroke: #636e7b;
+}
+
+[data-theme='dark'] .cal-heatmap-container rect.highlight {
+  stroke: #768390;
+}
+
+[data-theme='dark'] #ch-tooltip {
+  background: #636e7b;
+  color: #cdd9e5;
+}

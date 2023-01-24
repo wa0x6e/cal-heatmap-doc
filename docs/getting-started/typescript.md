@@ -1,5 +1,6 @@
 ---
 title: Typescript
+description: Typescript declaration usage
 sidebar_position: 3
 ---
 

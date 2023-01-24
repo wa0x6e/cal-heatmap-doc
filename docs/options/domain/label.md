@@ -2,6 +2,8 @@
 title: label
 ---
 
+import BrowserWindow from '@site/src/components/BrowserWindow';
+
 Specify all options related to the domain's label configuration
 
 ```js
@@ -54,6 +56,21 @@ position: 'top' | 'right' | 'bottom' | 'left',
 
 Default: `bottom`
 
+<BrowserWindow>
+
+```jsx live noInline
+const cal = new CalHeatmap();
+// Change the position value to see result
+cal.paint({
+  itemSelector: '#ex-position',
+  domain: { label: { position: 'top' } },
+});
+
+render(<div id="ex-position"></div>);
+```
+
+</BrowserWindow>
+
 ## `textAlign`
 
 Horizontal alignment of the label
@@ -63,6 +80,21 @@ textAlign: 'start' | 'middle' | 'end',
 ```
 
 Default: `middle`
+
+<BrowserWindow>
+
+```jsx live noInline
+const cal = new CalHeatmap();
+// Change the textAlign value to see result
+cal.paint({
+  itemSelector: '#ex-textalign',
+  domain: { label: { textAlign: 'left' } },
+});
+
+render(<div id="ex-textalign"></div>);
+```
+
+</BrowserWindow>
 
 ## `offset`
 
@@ -84,6 +116,21 @@ rotate: null | 'left' | 'right',
 ```
 
 Default: `null`
+
+<BrowserWindow>
+
+```jsx live noInline
+const cal = new CalHeatmap();
+// Change the textAlign value to see result
+cal.paint({
+  itemSelector: '#ex-rotate',
+  domain: { label: { rotate: 'left' } },
+});
+
+render(<div id="ex-rotate"></div>);
+```
+
+</BrowserWindow>
 
 ## `width`
 
@@ -114,3 +161,18 @@ Default: `25`
 Ignored when [`position`](#position) is set to `left` or `right`.
 In these cases, the height is capped to the domain height.
 :::
+
+<BrowserWindow>
+
+```jsx live noInline
+const cal = new CalHeatmap();
+// Change the height value to see result
+cal.paint({
+  itemSelector: '#ex-height',
+  domain: { label: { height: 50 } },
+});
+
+render(<div id="ex-rotate"></div>);
+```
+
+</BrowserWindow>

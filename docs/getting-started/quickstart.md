@@ -1,5 +1,6 @@
 ---
 title: Quick Start
+description: Paint your first calendar in 3 lines
 sidebar_position: 2
 ---
 

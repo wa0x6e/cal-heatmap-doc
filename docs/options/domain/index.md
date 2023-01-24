@@ -123,7 +123,7 @@ Specify all options related to the domain’s label
 label: LabelOptions;
 ```
 
-See the [Domain Label section](/options/domain/label.html)
+See the [Domain Label section](/options/domain/label.md) for more informations
 
 ## `subLabel`
 
@@ -133,7 +133,7 @@ Specify all options related to the domain’s subLabel
 subLabel: SubLabelOptions;
 ```
 
-See the [Domain Label section](/options/domain/label.html)
+See the [SubLabel section](/options/domain/sublabel.md) for more informations
 
 ## `sort`
 
@@ -161,6 +161,6 @@ render(<div id="example-sort"></div>);
 
 </BrowserWindow>
 
-:::info Option scope
+:::caution Option scope
 This only affect the domain's order, not the subDomain.
 :::

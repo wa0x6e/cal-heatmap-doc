@@ -25,8 +25,6 @@ type Options = {
   data: DataOptions,
   label: LabelOptions,
   animationDuration: number,
-  tooltip: TooltipOptions,
-  legend: LegendOptions,
   scale: ScaleOptions,
 };
 ```

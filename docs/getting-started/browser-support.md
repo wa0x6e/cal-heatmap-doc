@@ -1,6 +1,6 @@
 ---
 title: Browser support
-description: How to install Cal-Heatmap via CDN or NPM
+description: List of supported browsers and devices
 sidebar_position: 3
 ---
 

@@ -7,8 +7,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Cal-Heatmap',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://Cal-Heatmap.com',
+  tagline: 'Cal-Heatmap is a javascript library to create a calendar heatmap',
+  url: 'https://cal-Heatmap.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -75,7 +75,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'introduction',
+            docId: 'getting-started/installation',
             position: 'left',
             label: 'Docs',
           },

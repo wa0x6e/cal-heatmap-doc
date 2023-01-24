@@ -54,8 +54,9 @@ scheme: string,
 Support all schemes from [d3-scale-chromatic](https://github.com/d3/d3-scale-chromatic).
 Just use any scheme name without the `scheme` prefix.
 
-{: .note}
+:::caution
 `range`, which allow more advanced scheme customization, will take precedence if set.
+:::
 
 ## range
 

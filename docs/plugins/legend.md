@@ -60,7 +60,7 @@ Default: `true`
 
 Specify where the legend should be rendered
 
-If not sepcified, the legend will be inserted just after the calendar, in the same DOM node defined by [`itemSelector`](/options/itemSelector).
+If not sepcified, the legend will be inserted just after the calendar, in the same DOM node defined by [`itemSelector`](/options/itemSelector.md).
 
 #### Example
 

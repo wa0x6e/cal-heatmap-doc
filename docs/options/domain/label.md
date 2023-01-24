@@ -43,7 +43,7 @@ This option accepts different value's type, see table below for usage.
 | `function`  | Display the function's return value. The function takes the domain's timestamp and the label's SVG Element as argument | `function (timestamp) { return new Date(date).toISOString(); }` | `2022-12-06T20:01:51.290Z` |
 
 :::tip
-dayjs `format()` is [`locale`](/options/date.html#locale) and timezone aware.
+dayjs `format()` is [`locale`](/options/date.md#locale) and timezone aware.
 :::
 
 ## `position`

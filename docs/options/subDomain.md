@@ -171,7 +171,7 @@ This option accepts different value's type, see table below for usage.
 | `function` | Display the function's return value. The function takes the subDomain's timestamp, value and the label's SVG Element as argument | `` function (timestamp, value) { return `${value} items on ${new Date(date).toISOString()}`; } `` | `50 items on 2022-12-06T20:01:51.290Z` |
 
 :::tip
-dayjs `format()` is [`locale`](/options/date.html#locale) and timezone aware.
+dayjs `format()` is [`locale`](/options/date.md#locale) and timezone aware.
 :::
 
 :::caution
@@ -213,5 +213,5 @@ the label color may not be readable.
 Using a `function` will allow more fine-tuning of the label color, as you can use:
 
 - a [d3-color scale](https://github.com/d3/d3-scale-chromatic)
-- a range of static colors (i.e `['#fff', '#eee', '#000']`, matching the [`scale's range`](/options/scale.html))
+- a range of static colors (i.e `['#fff', '#eee', '#000']`, matching the [`scale's range`](/options/scale.md))
 - a custom function returning a color, computed from the background color (like the default value)

@@ -126,7 +126,7 @@ cal.on('mouseout', (event, timestamp, value) => {
 
 ### `minDateReached`
 
-Event emitted after a navigation event, and when the calendar has reached the [`min`](/options/date.html#min) date, if set.
+Event emitted after a navigation event, and when the calendar has reached the [`min`](/options/date.md#min) date, if set.
 
 #### Arguments: `none`
 
@@ -138,7 +138,7 @@ cal.on('minDateReached', () => {
 
 ### `maxDateReached`
 
-Event emitted after a navigation event, and when the calendar has reached the [`max`](/options/date.html#max) date, if set.
+Event emitted after a navigation event, and when the calendar has reached the [`max`](/options/date.md#max) date, if set.
 
 #### Arguments: `none`
 
@@ -150,7 +150,7 @@ cal.on('maxDateReached', () => {
 
 ### `minDateNotReached`
 
-Event emitted after a navigation event, and when the calendar has _not_ reached the [`min`](/options/date.html#min) date, if set.
+Event emitted after a navigation event, and when the calendar has _not_ reached the [`min`](/options/date.md#min) date, if set.
 Used to exit the calendar from the `minDateReached` status.
 
 #### Arguments: `none`
@@ -164,7 +164,7 @@ cal.on('minDateNotReached', () => {
 
 ### `maxDateNotReached`
 
-Event emitted after a navigation event, and when the calendar has _not_ reached the [`max`](/options/date.html#max) date, if set.
+Event emitted after a navigation event, and when the calendar has _not_ reached the [`max`](/options/date.md#max) date, if set.
 Used to exit the calendar from the `maxDateReached` status.
 
 #### Arguments: `none`
@@ -178,7 +178,7 @@ cal.on('maxDateNotReached', () => {
 
 ### `destroy`
 
-Event emitted when calling [`destroy()`](/api/destroy.html).
+Event emitted when calling [`destroy()`](/API/destroy.md).
 
 #### Arguments: `none`
 

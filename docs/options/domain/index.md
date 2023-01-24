@@ -39,8 +39,6 @@ Default: `hour`
 - `day`
 - `hour`
 
-See [Examples](/examples)
-
 ## `gutter`
 
 Space between each domain, in pixel

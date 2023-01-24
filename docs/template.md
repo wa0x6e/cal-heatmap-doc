@@ -34,7 +34,7 @@ You can create and use a custom template if you wish to:
 ## How to use
 
 - Creates a template
-- Register the template using [`addTemplates()`](/api/addTemplates)
+- Register the template using [`addTemplates()`](/API/addTemplates.md)
 
 ### Creating a template
 
@@ -50,7 +50,7 @@ type Template = function(DateHelper: DateHelper, options: Options) {
 ### Arguments
 
 - `DateHelper`: a [Datehelper](https://github.com/wa0x6e/cal-heatmap/blob/master/src/helpers/DateHelper.ts) object, also used internally by the calendar for all date related computation. You should always rely on this helper whenever possible for date computation consistency.
-- `Options`: the [Options](/options) object
+- `Options`: the [Options](/options/index.md) object
 
 ### Return value
 

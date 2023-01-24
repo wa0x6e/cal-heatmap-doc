@@ -20,238 +20,883 @@
           "contentPathLocalized": "/Users/wan/Websites/Github/cal-heatmap-doc/i18n/en/docusaurus-plugin-content-docs/current",
           "docs": [
             {
-              "unversionedId": "intro",
-              "id": "intro",
-              "title": "Tutorial Intro",
-              "description": "Let's discover Docusaurus in less than 5 minutes.",
-              "source": "@site/docs/intro.md",
-              "sourceDirName": ".",
-              "slug": "/intro",
-              "permalink": "/docs/intro",
+              "unversionedId": "API/addTemplates",
+              "id": "API/addTemplates",
+              "title": "addTemplates()",
+              "description": "Add a new subDomain template",
+              "source": "@site/docs/API/addTemplates.md",
+              "sourceDirName": "API",
+              "slug": "/API/addTemplates",
+              "permalink": "/docs/API/addTemplates",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/intro.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/API/addTemplates.md",
               "tags": [],
               "version": "current",
-              "sidebarPosition": 1,
+              "sidebarPosition": 10,
               "frontMatter": {
-                "sidebar_position": 1
-              },
-              "sidebar": "tutorialSidebar",
-              "next": {
-                "title": "Tutorial - Basics",
-                "permalink": "/docs/category/tutorial---basics"
-              }
-            },
-            {
-              "unversionedId": "tutorial-basics/congratulations",
-              "id": "tutorial-basics/congratulations",
-              "title": "Congratulations!",
-              "description": "You have just learned the basics of Docusaurus and made some changes to the initial template.",
-              "source": "@site/docs/tutorial-basics/congratulations.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/congratulations",
-              "permalink": "/docs/tutorial-basics/congratulations",
-              "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/congratulations.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 6,
-              "frontMatter": {
-                "sidebar_position": 6
+                "title": "addTemplates()",
+                "sidebar_position": 10
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Deploy your site",
-                "permalink": "/docs/tutorial-basics/deploy-your-site"
+                "title": "destroy()",
+                "permalink": "/docs/API/destroy"
               },
               "next": {
-                "title": "Tutorial - Extras",
-                "permalink": "/docs/category/tutorial---extras"
+                "title": "extendDayjs()",
+                "permalink": "/docs/API/extendDayjs"
               }
             },
             {
-              "unversionedId": "tutorial-basics/create-a-blog-post",
-              "id": "tutorial-basics/create-a-blog-post",
-              "title": "Create a Blog Post",
-              "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
-              "source": "@site/docs/tutorial-basics/create-a-blog-post.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/create-a-blog-post",
-              "permalink": "/docs/tutorial-basics/create-a-blog-post",
+              "unversionedId": "API/destroy",
+              "id": "API/destroy",
+              "title": "destroy()",
+              "description": "Destroy the calendar",
+              "source": "@site/docs/API/destroy.md",
+              "sourceDirName": "API",
+              "slug": "/API/destroy",
+              "permalink": "/docs/API/destroy",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/create-a-blog-post.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 3,
-              "frontMatter": {
-                "sidebar_position": 3
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Create a Document",
-                "permalink": "/docs/tutorial-basics/create-a-document"
-              },
-              "next": {
-                "title": "Markdown Features",
-                "permalink": "/docs/tutorial-basics/markdown-features"
-              }
-            },
-            {
-              "unversionedId": "tutorial-basics/create-a-document",
-              "id": "tutorial-basics/create-a-document",
-              "title": "Create a Document",
-              "description": "Documents are groups of pages connected through:",
-              "source": "@site/docs/tutorial-basics/create-a-document.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/create-a-document",
-              "permalink": "/docs/tutorial-basics/create-a-document",
-              "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/create-a-document.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 2,
-              "frontMatter": {
-                "sidebar_position": 2
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Create a Page",
-                "permalink": "/docs/tutorial-basics/create-a-page"
-              },
-              "next": {
-                "title": "Create a Blog Post",
-                "permalink": "/docs/tutorial-basics/create-a-blog-post"
-              }
-            },
-            {
-              "unversionedId": "tutorial-basics/create-a-page",
-              "id": "tutorial-basics/create-a-page",
-              "title": "Create a Page",
-              "description": "Add Markdown or React files to src/pages to create a standalone page:",
-              "source": "@site/docs/tutorial-basics/create-a-page.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/create-a-page",
-              "permalink": "/docs/tutorial-basics/create-a-page",
-              "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/create-a-page.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 1,
-              "frontMatter": {
-                "sidebar_position": 1
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Tutorial - Basics",
-                "permalink": "/docs/category/tutorial---basics"
-              },
-              "next": {
-                "title": "Create a Document",
-                "permalink": "/docs/tutorial-basics/create-a-document"
-              }
-            },
-            {
-              "unversionedId": "tutorial-basics/deploy-your-site",
-              "id": "tutorial-basics/deploy-your-site",
-              "title": "Deploy your site",
-              "description": "Docusaurus is a static-site-generator (also called Jamstack).",
-              "source": "@site/docs/tutorial-basics/deploy-your-site.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/deploy-your-site",
-              "permalink": "/docs/tutorial-basics/deploy-your-site",
-              "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/deploy-your-site.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 5,
-              "frontMatter": {
-                "sidebar_position": 5
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Markdown Features",
-                "permalink": "/docs/tutorial-basics/markdown-features"
-              },
-              "next": {
-                "title": "Congratulations!",
-                "permalink": "/docs/tutorial-basics/congratulations"
-              }
-            },
-            {
-              "unversionedId": "tutorial-basics/markdown-features",
-              "id": "tutorial-basics/markdown-features",
-              "title": "Markdown Features",
-              "description": "Docusaurus supports Markdown and a few additional features.",
-              "source": "@site/docs/tutorial-basics/markdown-features.mdx",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/markdown-features",
-              "permalink": "/docs/tutorial-basics/markdown-features",
-              "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/markdown-features.mdx",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/API/destroy.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 4,
               "frontMatter": {
+                "title": "destroy()",
                 "sidebar_position": 4
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Create a Blog Post",
-                "permalink": "/docs/tutorial-basics/create-a-blog-post"
+                "title": "fill()",
+                "permalink": "/docs/API/fill"
               },
               "next": {
-                "title": "Deploy your site",
-                "permalink": "/docs/tutorial-basics/deploy-your-site"
+                "title": "addTemplates()",
+                "permalink": "/docs/API/addTemplates"
               }
             },
             {
-              "unversionedId": "tutorial-extras/manage-docs-versions",
-              "id": "tutorial-extras/manage-docs-versions",
-              "title": "Manage Docs Versions",
-              "description": "Docusaurus can manage multiple versions of your docs.",
-              "source": "@site/docs/tutorial-extras/manage-docs-versions.md",
-              "sourceDirName": "tutorial-extras",
-              "slug": "/tutorial-extras/manage-docs-versions",
-              "permalink": "/docs/tutorial-extras/manage-docs-versions",
+              "unversionedId": "API/dimensions",
+              "id": "API/dimensions",
+              "title": "dimensions()",
+              "description": "Return the calendar's dimensions",
+              "source": "@site/docs/API/dimensions.md",
+              "sourceDirName": "API",
+              "slug": "/API/dimensions",
+              "permalink": "/docs/API/dimensions",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-extras/manage-docs-versions.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/API/dimensions.md",
               "tags": [],
               "version": "current",
-              "sidebarPosition": 1,
               "frontMatter": {
-                "sidebar_position": 1
+                "title": "dimensions()"
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Tutorial - Extras",
-                "permalink": "/docs/category/tutorial---extras"
+                "title": "extendDayjs()",
+                "permalink": "/docs/API/extendDayjs"
               },
               "next": {
-                "title": "Translate your site",
-                "permalink": "/docs/tutorial-extras/translate-your-site"
+                "title": "Navigation",
+                "permalink": "/docs/API/navigation/"
               }
             },
             {
-              "unversionedId": "tutorial-extras/translate-your-site",
-              "id": "tutorial-extras/translate-your-site",
-              "title": "Translate your site",
-              "description": "Let's translate docs/intro.md to French.",
-              "source": "@site/docs/tutorial-extras/translate-your-site.md",
-              "sourceDirName": "tutorial-extras",
-              "slug": "/tutorial-extras/translate-your-site",
-              "permalink": "/docs/tutorial-extras/translate-your-site",
+              "unversionedId": "API/extendDayjs",
+              "id": "API/extendDayjs",
+              "title": "extendDayjs()",
+              "description": "Extend the dayjs library with plugins",
+              "source": "@site/docs/API/extendDayjs.md",
+              "sourceDirName": "API",
+              "slug": "/API/extendDayjs",
+              "permalink": "/docs/API/extendDayjs",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-extras/translate-your-site.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/API/extendDayjs.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 12,
+              "frontMatter": {
+                "title": "extendDayjs()",
+                "sidebar_position": 12
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "addTemplates()",
+                "permalink": "/docs/API/addTemplates"
+              },
+              "next": {
+                "title": "dimensions()",
+                "permalink": "/docs/API/dimensions"
+              }
+            },
+            {
+              "unversionedId": "API/fill",
+              "id": "API/fill",
+              "title": "fill()",
+              "description": "Update the calendar's data set",
+              "source": "@site/docs/API/fill.md",
+              "sourceDirName": "API",
+              "slug": "/API/fill",
+              "permalink": "/docs/API/fill",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/API/fill.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 2,
               "frontMatter": {
+                "title": "fill()",
                 "sidebar_position": 2
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Manage Docs Versions",
-                "permalink": "/docs/tutorial-extras/manage-docs-versions"
+                "title": "paint()",
+                "permalink": "/docs/API/paint"
+              },
+              "next": {
+                "title": "destroy()",
+                "permalink": "/docs/API/destroy"
+              }
+            },
+            {
+              "unversionedId": "API/index",
+              "id": "API/index",
+              "title": "API",
+              "description": "Methods to interact with the calendar.",
+              "source": "@site/docs/API/index.md",
+              "sourceDirName": "API",
+              "slug": "/API/",
+              "permalink": "/docs/API/",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/API/index.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 9,
+              "frontMatter": {
+                "title": "API",
+                "sidebar_position": 9
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Tooltip",
+                "permalink": "/docs/plugins/tooltip"
+              },
+              "next": {
+                "title": "paint()",
+                "permalink": "/docs/API/paint"
+              }
+            },
+            {
+              "unversionedId": "API/navigation/index",
+              "id": "API/navigation/index",
+              "title": "Navigation",
+              "description": "Update the calendar time window dynamically",
+              "source": "@site/docs/API/navigation/index.md",
+              "sourceDirName": "API/navigation",
+              "slug": "/API/navigation/",
+              "permalink": "/docs/API/navigation/",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/API/navigation/index.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Navigation"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "dimensions()",
+                "permalink": "/docs/API/dimensions"
+              },
+              "next": {
+                "title": "next()",
+                "permalink": "/docs/API/navigation/next"
+              }
+            },
+            {
+              "unversionedId": "API/navigation/jumpTo",
+              "id": "API/navigation/jumpTo",
+              "title": "jumpTo()",
+              "description": "Scroll the calendar to the given date.",
+              "source": "@site/docs/API/navigation/jumpTo.md",
+              "sourceDirName": "API/navigation",
+              "slug": "/API/navigation/jumpTo",
+              "permalink": "/docs/API/navigation/jumpTo",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/API/navigation/jumpTo.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "jumpTo()",
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "previous()",
+                "permalink": "/docs/API/navigation/previous"
+              },
+              "next": {
+                "title": "Template",
+                "permalink": "/docs/template"
+              }
+            },
+            {
+              "unversionedId": "API/navigation/next",
+              "id": "API/navigation/next",
+              "title": "next()",
+              "description": "Shift the calendar by the given number of domains forward (in the future).",
+              "source": "@site/docs/API/navigation/next.md",
+              "sourceDirName": "API/navigation",
+              "slug": "/API/navigation/next",
+              "permalink": "/docs/API/navigation/next",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/API/navigation/next.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "next()",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Navigation",
+                "permalink": "/docs/API/navigation/"
+              },
+              "next": {
+                "title": "previous()",
+                "permalink": "/docs/API/navigation/previous"
+              }
+            },
+            {
+              "unversionedId": "API/navigation/previous",
+              "id": "API/navigation/previous",
+              "title": "previous()",
+              "description": "Shift the calendar by the given number of domains backward (in the past).",
+              "source": "@site/docs/API/navigation/previous.md",
+              "sourceDirName": "API/navigation",
+              "slug": "/API/navigation/previous",
+              "permalink": "/docs/API/navigation/previous",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/API/navigation/previous.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "previous()",
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "next()",
+                "permalink": "/docs/API/navigation/next"
+              },
+              "next": {
+                "title": "jumpTo()",
+                "permalink": "/docs/API/navigation/jumpTo"
+              }
+            },
+            {
+              "unversionedId": "API/paint",
+              "id": "API/paint",
+              "title": "paint()",
+              "description": "Paint the calendar using the given Options and Plugins.",
+              "source": "@site/docs/API/paint.md",
+              "sourceDirName": "API",
+              "slug": "/API/paint",
+              "permalink": "/docs/API/paint",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/API/paint.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "paint()",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "API",
+                "permalink": "/docs/API/"
+              },
+              "next": {
+                "title": "fill()",
+                "permalink": "/docs/API/fill"
+              }
+            },
+            {
+              "unversionedId": "events",
+              "id": "events",
+              "title": "Events",
+              "description": "Listen for events emitted by the calendar",
+              "source": "@site/docs/events.md",
+              "sourceDirName": ".",
+              "slug": "/events",
+              "permalink": "/docs/events",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/events.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 6,
+              "frontMatter": {
+                "title": "Events",
+                "sidebar_position": 6
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "scale",
+                "permalink": "/docs/options/scale"
+              },
+              "next": {
+                "title": "Plugins",
+                "permalink": "/docs/plugins/"
+              }
+            },
+            {
+              "unversionedId": "getting-started/installation",
+              "id": "getting-started/installation",
+              "title": "Installation",
+              "description": "How to install Cal-Heatmap via CDN or NPM",
+              "source": "@site/docs/getting-started/installation.md",
+              "sourceDirName": "getting-started",
+              "slug": "/getting-started/installation",
+              "permalink": "/docs/getting-started/installation",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/installation.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Installation",
+                "description": "How to install Cal-Heatmap via CDN or NPM",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Getting started",
+                "permalink": "/docs/category/getting-started"
+              },
+              "next": {
+                "title": "Quick Start",
+                "permalink": "/docs/getting-started/quickstart"
+              }
+            },
+            {
+              "unversionedId": "getting-started/quickstart",
+              "id": "getting-started/quickstart",
+              "title": "Quick Start",
+              "description": "After installing the script:",
+              "source": "@site/docs/getting-started/quickstart.md",
+              "sourceDirName": "getting-started",
+              "slug": "/getting-started/quickstart",
+              "permalink": "/docs/getting-started/quickstart",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/quickstart.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "Quick Start",
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Installation",
+                "permalink": "/docs/getting-started/installation"
+              },
+              "next": {
+                "title": "Options",
+                "permalink": "/docs/options/"
+              }
+            },
+            {
+              "unversionedId": "introduction",
+              "id": "introduction",
+              "title": "Introduction",
+              "description": "Cal-Heatmap is a javascript library to create a calendar heatmap.",
+              "source": "@site/docs/introduction.md",
+              "sourceDirName": ".",
+              "slug": "/introduction",
+              "permalink": "/docs/introduction",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/introduction.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Introduction",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "next": {
+                "title": "Getting started",
+                "permalink": "/docs/category/getting-started"
+              }
+            },
+            {
+              "unversionedId": "migrate_from_v3",
+              "id": "migrate_from_v3",
+              "title": "Migrating from 3.x",
+              "description": "The current v4 release is rewritten from the ground up, and have a lot of major breaking changes.",
+              "source": "@site/docs/migrate_from_v3.md",
+              "sourceDirName": ".",
+              "slug": "/migrate_from_v3",
+              "permalink": "/docs/migrate_from_v3",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/migrate_from_v3.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 25,
+              "frontMatter": {
+                "title": "Migrating from 3.x",
+                "sidebar_position": 25
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Template",
+                "permalink": "/docs/template"
+              },
+              "next": {
+                "title": "Showcase",
+                "permalink": "/docs/showcase"
+              }
+            },
+            {
+              "unversionedId": "options/data",
+              "id": "options/data",
+              "title": "data",
+              "description": "Specify how to fetch and process the data used to fill the calendar",
+              "source": "@site/docs/options/data.md",
+              "sourceDirName": "options",
+              "slug": "/options/data",
+              "permalink": "/docs/options/data",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/options/data.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 6,
+              "frontMatter": {
+                "title": "data",
+                "sidebar_position": 6
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "date",
+                "permalink": "/docs/options/date"
+              },
+              "next": {
+                "title": "verticalOrientation",
+                "permalink": "/docs/options/verticalOrientation"
+              }
+            },
+            {
+              "unversionedId": "options/date",
+              "id": "options/date",
+              "title": "date",
+              "description": "Specify the calendar's time boundaries and settings",
+              "source": "@site/docs/options/date.md",
+              "sourceDirName": "options",
+              "slug": "/options/date",
+              "permalink": "/docs/options/date",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/options/date.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "title": "date",
+                "sidebar_position": 5
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "subDomain",
+                "permalink": "/docs/options/subDomain"
+              },
+              "next": {
+                "title": "data",
+                "permalink": "/docs/options/data"
+              }
+            },
+            {
+              "unversionedId": "options/domain/index",
+              "id": "options/domain/index",
+              "title": "domain",
+              "description": "Specify all options related to the domain configuration",
+              "source": "@site/docs/options/domain/index.md",
+              "sourceDirName": "options/domain",
+              "slug": "/options/domain/",
+              "permalink": "/docs/options/domain/",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/options/domain/index.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "domain",
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "range",
+                "permalink": "/docs/options/range"
+              },
+              "next": {
+                "title": "label",
+                "permalink": "/docs/options/domain/label"
+              }
+            },
+            {
+              "unversionedId": "options/domain/label",
+              "id": "options/domain/label",
+              "title": "label",
+              "description": "Specify all options related to the domain's label configuration",
+              "source": "@site/docs/options/domain/label.md",
+              "sourceDirName": "options/domain",
+              "slug": "/options/domain/label",
+              "permalink": "/docs/options/domain/label",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/options/domain/label.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "label"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "domain",
+                "permalink": "/docs/options/domain/"
+              },
+              "next": {
+                "title": "subLabel",
+                "permalink": "/docs/options/domain/sublabel"
+              }
+            },
+            {
+              "unversionedId": "options/domain/sublabel",
+              "id": "options/domain/sublabel",
+              "title": "subLabel",
+              "description": "Specify all options related to the domain's subLabel configuration",
+              "source": "@site/docs/options/domain/sublabel.md",
+              "sourceDirName": "options/domain",
+              "slug": "/options/domain/sublabel",
+              "permalink": "/docs/options/domain/sublabel",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/options/domain/sublabel.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "subLabel"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "label",
+                "permalink": "/docs/options/domain/label"
+              },
+              "next": {
+                "title": "subDomain",
+                "permalink": "/docs/options/subDomain"
+              }
+            },
+            {
+              "unversionedId": "options/itemSelector",
+              "id": "options/itemSelector",
+              "title": "itemSelector",
+              "description": "Specify where the calendar should be rendered",
+              "source": "@site/docs/options/itemSelector.md",
+              "sourceDirName": "options",
+              "slug": "/options/itemSelector",
+              "permalink": "/docs/options/itemSelector",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/options/itemSelector.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "itemSelector",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Options",
+                "permalink": "/docs/options/"
+              },
+              "next": {
+                "title": "range",
+                "permalink": "/docs/options/range"
+              }
+            },
+            {
+              "unversionedId": "options/options",
+              "id": "options/options",
+              "title": "Options",
+              "description": "Customize the UI and content of the calendar",
+              "source": "@site/docs/options/index.md",
+              "sourceDirName": "options",
+              "slug": "/options/",
+              "permalink": "/docs/options/",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/options/index.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "Options",
+                "sidebar_position": 3,
+                "id": "options"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Quick Start",
+                "permalink": "/docs/getting-started/quickstart"
+              },
+              "next": {
+                "title": "itemSelector",
+                "permalink": "/docs/options/itemSelector"
+              }
+            },
+            {
+              "unversionedId": "options/range",
+              "id": "options/range",
+              "title": "range",
+              "description": "Specify the number of domains to show",
+              "source": "@site/docs/options/range.md",
+              "sourceDirName": "options",
+              "slug": "/options/range",
+              "permalink": "/docs/options/range",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/options/range.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "range",
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "itemSelector",
+                "permalink": "/docs/options/itemSelector"
+              },
+              "next": {
+                "title": "domain",
+                "permalink": "/docs/options/domain/"
+              }
+            },
+            {
+              "unversionedId": "options/scale",
+              "id": "options/scale",
+              "title": "scale",
+              "description": "Control your data colors",
+              "source": "@site/docs/options/scale.md",
+              "sourceDirName": "options",
+              "slug": "/options/scale",
+              "permalink": "/docs/options/scale",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/options/scale.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 47,
+              "frontMatter": {
+                "title": "scale",
+                "sidebar_position": 47
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "verticalOrientation",
+                "permalink": "/docs/options/verticalOrientation"
+              },
+              "next": {
+                "title": "Events",
+                "permalink": "/docs/events"
+              }
+            },
+            {
+              "unversionedId": "options/subDomain",
+              "id": "options/subDomain",
+              "title": "subDomain",
+              "description": "Specify all options related to the subDomain configuration",
+              "source": "@site/docs/options/subDomain.md",
+              "sourceDirName": "options",
+              "slug": "/options/subDomain",
+              "permalink": "/docs/options/subDomain",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/options/subDomain.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "title": "subDomain",
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "subLabel",
+                "permalink": "/docs/options/domain/sublabel"
+              },
+              "next": {
+                "title": "date",
+                "permalink": "/docs/options/date"
+              }
+            },
+            {
+              "unversionedId": "options/verticalOrientation",
+              "id": "options/verticalOrientation",
+              "title": "verticalOrientation",
+              "description": "Whether the domains should be arranged on top of each other, or side by side.",
+              "source": "@site/docs/options/verticalOrientation.md",
+              "sourceDirName": "options",
+              "slug": "/options/verticalOrientation",
+              "permalink": "/docs/options/verticalOrientation",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/options/verticalOrientation.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 10,
+              "frontMatter": {
+                "title": "verticalOrientation",
+                "sidebar_position": 10
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "data",
+                "permalink": "/docs/options/data"
+              },
+              "next": {
+                "title": "scale",
+                "permalink": "/docs/options/scale"
+              }
+            },
+            {
+              "unversionedId": "plugins/index",
+              "id": "plugins/index",
+              "title": "Plugins",
+              "description": "Introduction",
+              "source": "@site/docs/plugins/index.md",
+              "sourceDirName": "plugins",
+              "slug": "/plugins/",
+              "permalink": "/docs/plugins/",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/plugins/index.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 7,
+              "frontMatter": {
+                "title": "Plugins",
+                "sidebar_position": 7
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Events",
+                "permalink": "/docs/events"
+              },
+              "next": {
+                "title": "Legend",
+                "permalink": "/docs/plugins/legend"
+              }
+            },
+            {
+              "unversionedId": "plugins/legend",
+              "id": "plugins/legend",
+              "title": "Legend",
+              "description": "This plugin generates a legend",
+              "source": "@site/docs/plugins/legend.md",
+              "sourceDirName": "plugins",
+              "slug": "/plugins/legend",
+              "permalink": "/docs/plugins/legend",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/plugins/legend.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "Legend",
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Plugins",
+                "permalink": "/docs/plugins/"
+              },
+              "next": {
+                "title": "Tooltip",
+                "permalink": "/docs/plugins/tooltip"
+              }
+            },
+            {
+              "unversionedId": "plugins/tooltip",
+              "id": "plugins/tooltip",
+              "title": "Tooltip",
+              "description": "This plugin adds a tooltip when hovering over a subDomain's cell",
+              "source": "@site/docs/plugins/tooltip.md",
+              "sourceDirName": "plugins",
+              "slug": "/plugins/tooltip",
+              "permalink": "/docs/plugins/tooltip",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/plugins/tooltip.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "Tooltip",
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Legend",
+                "permalink": "/docs/plugins/legend"
+              },
+              "next": {
+                "title": "API",
+                "permalink": "/docs/API/"
+              }
+            },
+            {
+              "unversionedId": "showcase",
+              "id": "showcase",
+              "title": "Showcase",
+              "description": "",
+              "source": "@site/docs/showcase.md",
+              "sourceDirName": ".",
+              "slug": "/showcase",
+              "permalink": "/docs/showcase",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/showcase.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Showcase"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Migrating from 3.x",
+                "permalink": "/docs/migrate_from_v3"
+              }
+            },
+            {
+              "unversionedId": "template",
+              "id": "template",
+              "title": "Template",
+              "description": "Defines the structure and content of a subDomain",
+              "source": "@site/docs/template.md",
+              "sourceDirName": ".",
+              "slug": "/template",
+              "permalink": "/docs/template",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/template.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 10,
+              "frontMatter": {
+                "title": "Template",
+                "sidebar_position": 10
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "jumpTo()",
+                "permalink": "/docs/API/navigation/jumpTo"
+              },
+              "next": {
+                "title": "Migrating from 3.x",
+                "permalink": "/docs/migrate_from_v3"
               }
             }
           ],
@@ -260,66 +905,185 @@
             "tutorialSidebar": [
               {
                 "type": "doc",
-                "id": "intro"
+                "id": "introduction"
               },
               {
                 "type": "category",
-                "label": "Tutorial - Basics",
+                "label": "Getting started",
                 "collapsible": true,
                 "collapsed": true,
                 "items": [
                   {
                     "type": "doc",
-                    "id": "tutorial-basics/create-a-page"
+                    "id": "getting-started/installation"
                   },
                   {
                     "type": "doc",
-                    "id": "tutorial-basics/create-a-document"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "tutorial-basics/create-a-blog-post"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "tutorial-basics/markdown-features"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "tutorial-basics/deploy-your-site"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "tutorial-basics/congratulations"
+                    "id": "getting-started/quickstart"
                   }
                 ],
                 "link": {
                   "type": "generated-index",
                   "description": "5 minutes to learn the most important Docusaurus concepts.",
-                  "slug": "/category/tutorial---basics",
-                  "permalink": "/docs/category/tutorial---basics"
+                  "slug": "/category/getting-started",
+                  "permalink": "/docs/category/getting-started"
                 }
               },
               {
                 "type": "category",
-                "label": "Tutorial - Extras",
+                "label": "Options",
                 "collapsible": true,
                 "collapsed": true,
                 "items": [
                   {
                     "type": "doc",
-                    "id": "tutorial-extras/manage-docs-versions"
+                    "id": "options/itemSelector"
                   },
                   {
                     "type": "doc",
-                    "id": "tutorial-extras/translate-your-site"
+                    "id": "options/range"
+                  },
+                  {
+                    "type": "category",
+                    "label": "domain",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "options/domain/label"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "options/domain/sublabel"
+                      }
+                    ],
+                    "link": {
+                      "type": "doc",
+                      "id": "options/domain/index"
+                    }
+                  },
+                  {
+                    "type": "doc",
+                    "id": "options/subDomain"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "options/date"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "options/data"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "options/verticalOrientation"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "options/scale"
                   }
                 ],
                 "link": {
-                  "type": "generated-index",
-                  "slug": "/category/tutorial---extras",
-                  "permalink": "/docs/category/tutorial---extras"
+                  "type": "doc",
+                  "id": "options/options"
                 }
+              },
+              {
+                "type": "doc",
+                "id": "events"
+              },
+              {
+                "type": "category",
+                "label": "Plugins",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "plugins/legend"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "plugins/tooltip"
+                  }
+                ],
+                "link": {
+                  "type": "doc",
+                  "id": "plugins/index"
+                }
+              },
+              {
+                "type": "category",
+                "label": "API",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "API/paint"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "API/fill"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "API/destroy"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "API/addTemplates"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "API/extendDayjs"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "API/dimensions"
+                  },
+                  {
+                    "type": "category",
+                    "label": "Navigation",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "API/navigation/next"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "API/navigation/previous"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "API/navigation/jumpTo"
+                      }
+                    ],
+                    "link": {
+                      "type": "doc",
+                      "id": "API/navigation/index"
+                    }
+                  }
+                ],
+                "link": {
+                  "type": "doc",
+                  "id": "API/index"
+                }
+              },
+              {
+                "type": "doc",
+                "id": "template"
+              },
+              {
+                "type": "doc",
+                "id": "migrate_from_v3"
+              },
+              {
+                "type": "doc",
+                "id": "showcase"
               }
             ]
           }
@@ -358,6 +1122,7 @@
   },
   "docusaurus-plugin-debug": {},
   "docusaurus-theme-classic": {},
+  "docusaurus-theme-live-codeblock": {},
   "docusaurus-bootstrap-plugin": {},
   "docusaurus-mdx-fallback-plugin": {}
 }

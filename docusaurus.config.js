@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'Cal-Heatmap',
   tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://Cal-Heatmap.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -16,8 +16,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'wa0x6e', // Usually your GitHub org/user name.
+  projectName: 'cal-heatmap', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -26,6 +26,8 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  themes: ['@docusaurus/theme-live-codeblock'],
 
   presets: [
     [
@@ -56,8 +58,16 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        id: 'beta_doc',
+        content:
+          'Documentation is for <b>v4.0.0-Beta</b>, some section may still be incomplete',
+        backgroundColor: '#ffebec',
+        textColor: '#091E42',
+        isCloseable: false,
+      },
       navbar: {
-        title: 'My Site',
+        title: 'Cal-Heatmap',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -65,12 +75,54 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'introduction',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            to: '/docs/options',
+            position: 'left',
+            label: 'Options',
+          },
+          {
+            to: '/docs/api',
+            position: 'left',
+            label: 'API',
+          },
+          {
+            to: 'docs/plugins',
+            position: 'left',
+            label: 'Plugins',
+          },
+          {
+            type: 'doc',
+            docId: 'template',
+            position: 'left',
+            label: 'Template',
+          },
+          {
+            type: 'doc',
+            docId: 'showcase',
+            position: 'left',
+            label: 'Showcase',
+          },
+          {
+            type: 'dropdown',
+            label: 'v4.0.0-beta 🚧',
+            position: 'right',
+            items: [
+              {
+                html: 'v3.1.6 <small>(deprecated)</small>',
+                href: 'https://cal-heatmap.com/v3/index.html',
+              },
+              {
+                html: 'v2.2.3 <small>(dead)</small>',
+                href: 'https://cal-heatmap.com/v2/index.html',
+              },
+            ],
+          },
+          {
+            href: 'https://github.com/wa0x6e/cal-heatmap',
             label: 'GitHub',
             position: 'right',
           },
@@ -122,6 +174,9 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+
+  scripts: ['https://d3js.org/d3.v7.min.js', '/js/cal-heatmap.min.js'],
+  stylesheets: ['/css/cal-heatmap.css'],
 };
 
 module.exports = config;

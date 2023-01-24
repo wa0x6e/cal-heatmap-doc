@@ -8,61 +8,171 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs",
-          "mainDocId": "intro",
+          "mainDocId": "introduction",
           "docs": [
             {
-              "id": "intro",
-              "path": "/docs/intro",
+              "id": "API/addTemplates",
+              "path": "/docs/API/addTemplates",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/congratulations",
-              "path": "/docs/tutorial-basics/congratulations",
+              "id": "API/destroy",
+              "path": "/docs/API/destroy",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/create-a-blog-post",
-              "path": "/docs/tutorial-basics/create-a-blog-post",
+              "id": "API/dimensions",
+              "path": "/docs/API/dimensions",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/create-a-document",
-              "path": "/docs/tutorial-basics/create-a-document",
+              "id": "API/extendDayjs",
+              "path": "/docs/API/extendDayjs",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/create-a-page",
-              "path": "/docs/tutorial-basics/create-a-page",
+              "id": "API/fill",
+              "path": "/docs/API/fill",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/deploy-your-site",
-              "path": "/docs/tutorial-basics/deploy-your-site",
+              "id": "API/index",
+              "path": "/docs/API/",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/markdown-features",
-              "path": "/docs/tutorial-basics/markdown-features",
+              "id": "API/navigation/index",
+              "path": "/docs/API/navigation/",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-extras/manage-docs-versions",
-              "path": "/docs/tutorial-extras/manage-docs-versions",
+              "id": "API/navigation/jumpTo",
+              "path": "/docs/API/navigation/jumpTo",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-extras/translate-your-site",
-              "path": "/docs/tutorial-extras/translate-your-site",
+              "id": "API/navigation/next",
+              "path": "/docs/API/navigation/next",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "/category/tutorial---basics",
-              "path": "/docs/category/tutorial---basics",
+              "id": "API/navigation/previous",
+              "path": "/docs/API/navigation/previous",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "/category/tutorial---extras",
-              "path": "/docs/category/tutorial---extras",
+              "id": "API/paint",
+              "path": "/docs/API/paint",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "events",
+              "path": "/docs/events",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started/installation",
+              "path": "/docs/getting-started/installation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started/quickstart",
+              "path": "/docs/getting-started/quickstart",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "introduction",
+              "path": "/docs/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "migrate_from_v3",
+              "path": "/docs/migrate_from_v3",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "options/data",
+              "path": "/docs/options/data",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "options/date",
+              "path": "/docs/options/date",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "options/domain/index",
+              "path": "/docs/options/domain/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "options/domain/label",
+              "path": "/docs/options/domain/label",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "options/domain/sublabel",
+              "path": "/docs/options/domain/sublabel",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "options/itemSelector",
+              "path": "/docs/options/itemSelector",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "options/options",
+              "path": "/docs/options/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "options/range",
+              "path": "/docs/options/range",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "options/scale",
+              "path": "/docs/options/scale",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "options/subDomain",
+              "path": "/docs/options/subDomain",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "options/verticalOrientation",
+              "path": "/docs/options/verticalOrientation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "plugins/index",
+              "path": "/docs/plugins/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "plugins/legend",
+              "path": "/docs/plugins/legend",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "plugins/tooltip",
+              "path": "/docs/plugins/tooltip",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "showcase",
+              "path": "/docs/showcase",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "template",
+              "path": "/docs/template",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/getting-started",
+              "path": "/docs/category/getting-started",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -70,8 +180,8 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/intro",
-                "label": "intro"
+                "path": "/docs/introduction",
+                "label": "introduction"
               }
             }
           }

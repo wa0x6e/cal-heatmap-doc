@@ -15,11 +15,7 @@ import BrowserWindow from '@site/src/components/BrowserWindow';
 
 ```jsx live noInline
 const cal = new CalHeatmap();
-cal.paint({
-  date: { start: new Date(2020, 0, 15) },
-  domain: { type: 'month' },
-  subDomain: { type: 'day' },
-});
+cal.paint({});
 render(<div id="cal-heatmap"></div>);
 ```
 

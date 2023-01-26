@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Cal-Heatmap',
   tagline: 'Cal-Heatmap is a javascript library to create a calendar heatmap',
-  url: 'https://cal-Heatmap.com',
-  baseUrl: '/',
+  url: 'https://wa0x6e.github.io/',
+  baseUrl: '/cal-heatmap-doc/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',

@@ -177,8 +177,8 @@ const config = {
       },
     }),
 
-  scripts: ['https://d3js.org/d3.v7.min.js', '/js/cal-heatmap.min.js'],
-  stylesheets: ['/css/cal-heatmap.css'],
+  scripts: ['https://d3js.org/d3.v7.min.js', '/cal-heatmap-doc/js/cal-heatmap.min.js'],
+  stylesheets: ['/cal-heatmap-doc/css/cal-heatmap.css'],
 };
 
 module.exports = config;

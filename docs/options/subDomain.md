@@ -183,6 +183,29 @@ You can customize the style of the subDomain label text via css, or by
 manipulating the `SVGElement` given as argument when using a `function`.
 :::
 
+<BrowserWindow>
+
+```jsx live noInline
+const cal = new CalHeatmap();
+cal.paint({
+  range: 3,
+  domain: { type: 'month' },
+  subDomain: {
+    width: 15,
+    height: 15,
+    type: 'day',
+    label: 'D',
+    color: (t, v, backgroundColor) => {
+      return d3.hcl(backgroundColor).l > 60 ? 'blue' : 'red';
+    },
+  },
+});
+
+render(<div id="cal-heatmap"></div>);
+```
+
+</BrowserWindow>
+
 ## `color`
 
 Color of the subDomain's label

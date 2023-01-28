@@ -40,15 +40,13 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/wa0x6e/cal-heatmap-doc/edit/main/',
+          editUrl: 'https://github.com/wa0x6e/cal-heatmap-doc/edit/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/wa0x6e/cal-heatmap-doc/edit/main/',
+          editUrl: 'https://github.com/wa0x6e/cal-heatmap-doc/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -177,7 +175,13 @@ const config = {
       },
     }),
 
-  scripts: ['https://d3js.org/d3.v7.min.js', '/cal-heatmap-doc/js/cal-heatmap.min.js'],
+  scripts: [
+    'https://d3js.org/d3.v7.min.js',
+    'https://unpkg.com/@popperjs/core@2',
+    '/cal-heatmap-doc/js/cal-heatmap.min.js',
+    '/cal-heatmap-doc/js/Tooltip.min.js',
+    '/cal-heatmap-doc/js/Legend.min.js',
+  ],
   stylesheets: ['/cal-heatmap-doc/css/cal-heatmap.css'],
 };
 

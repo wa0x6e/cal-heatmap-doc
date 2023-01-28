@@ -45,3 +45,41 @@
   background: #636e7b;
   color: #cdd9e5;
 }
+
+[data-theme='light'] .cal-heatmap-container .graph-rect {
+  fill: #ededed;
+}
+
+[data-theme='light'] .cal-heatmap-container .graph-subdomain-group rect:hover {
+  stroke: #000;
+}
+
+[data-theme='light'] .cal-heatmap-container rect.highlight {
+  stroke: #444;
+}
+
+[data-theme='light'] #ch-tooltip {
+  background: #222;
+  color: #bbb;
+}
+
+#ex-1 .domain-background {
+  fill: rgb(0, 0, 0, 0.05);
+}
+
+[data-theme='dark'] #ex-1 .domain-background {
+  fill: rgb(255, 255, 255, 0.08);
+}
+
+#ex-1 .graph-label {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#ex-2 .graph-label {
+  font-size: 10px;
+  font-weight: bold;
+  fill: #444;
+  text-transform: uppercase;
+}

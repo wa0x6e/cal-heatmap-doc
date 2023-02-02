@@ -33,6 +33,10 @@
   fill: #444950;
 }
 
+[data-theme='dark'] .cal-heatmap-container .subdomain-text {
+  fill: #fff;
+}
+
 [data-theme='dark'] .cal-heatmap-container .graph-subdomain-group rect:hover {
   stroke: #636e7b;
 }
@@ -48,6 +52,10 @@
 
 [data-theme='light'] .cal-heatmap-container .graph-rect {
   fill: #ededed;
+}
+
+[data-theme='light'] .cal-heatmap-container .subdomain-text {
+  fill: #000;
 }
 
 [data-theme='light'] .cal-heatmap-container .graph-subdomain-group rect:hover {

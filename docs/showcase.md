@@ -52,9 +52,9 @@ cal.paint(
       Tooltip,
       {
         text: function (date, value, dayjsDate) {
-          return value
-            ? value + '°C'
-            : 'No data' + ' on ' + dayjsDate.format('LL');
+          return (
+            (value ? value + '°C' : 'No data') + ' on ' + dayjsDate.format('LL')
+          );
         },
       },
     ],
@@ -119,9 +119,11 @@ cal.paint(
       Tooltip,
       {
         text: function (date, value, dayjsDate) {
-          return value
-            ? value + 'km/h'
-            : 'No data' + ' on ' + dayjsDate.format('LL');
+          return (
+            (value ? value + 'km/h' : 'No data') +
+            ' on ' +
+            dayjsDate.format('LL')
+          );
         },
       },
     ],
@@ -189,9 +191,9 @@ cal.paint(
       Tooltip,
       {
         text: function (date, value, dayjsDate) {
-          return value
-            ? value + '°C'
-            : 'No data' + ' on ' + dayjsDate.format('LL');
+          return (
+            (value ? value + '°C' : 'No data') + ' on ' + dayjsDate.format('LL')
+          );
         },
       },
     ],
@@ -298,9 +300,9 @@ cal.paint(
       Tooltip,
       {
         text: function (date, value, dayjsDate) {
-          return value
-            ? value + 'mm'
-            : 'No data' + ' on ' + dayjsDate.format('LL');
+          return (
+            (value ? value + 'mm' : 'No data') + ' on ' + dayjsDate.format('LL')
+          );
         },
       },
     ],

@@ -10,7 +10,7 @@ const config = {
   tagline:
     'Cal-Heatmap is a javascript charting library to create a time-series calendar heatmap',
   url: 'https://wa0x6e.github.io/',
-  baseUrl: '/cal-heatmap-doc/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
@@ -180,12 +180,12 @@ const config = {
   scripts: [
     'https://d3js.org/d3.v7.min.js',
     'https://unpkg.com/@popperjs/core@2',
-    '/cal-heatmap-doc/js/cal-heatmap.min.js',
-    '/cal-heatmap-doc/js/Tooltip.min.js',
-    '/cal-heatmap-doc/js/Legend.min.js',
-    '/cal-heatmap-doc/js/index-example.js',
+    '/js/cal-heatmap.min.js',
+    '/js/Tooltip.min.js',
+    '/js/Legend.min.js',
+    '/js/index-example.js',
   ],
-  stylesheets: ['/cal-heatmap-doc/css/cal-heatmap.css'],
+  stylesheets: ['/css/cal-heatmap.css'],
 };
 
 module.exports = config;

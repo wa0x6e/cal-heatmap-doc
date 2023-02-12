@@ -7,12 +7,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Cal-Heatmap',
-  tagline: 'Cal-Heatmap is a javascript library to create a calendar heatmap',
+  tagline:
+    'Cal-Heatmap is a javascript charting library to create a time-series calendar heatmap',
   url: 'https://wa0x6e.github.io/',
   baseUrl: '/cal-heatmap-doc/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -69,8 +70,8 @@ const config = {
       navbar: {
         title: 'Cal-Heatmap',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Cal-Heatmap',
+          src: 'img/favicon.png',
         },
         items: [
           {
@@ -112,7 +113,7 @@ const config = {
             position: 'right',
             items: [
               {
-                html: 'v3.1.6 <small>(deprecated)</small>',
+                html: 'v3.1.6',
                 href: 'https://cal-heatmap.com/v3/index.html',
               },
               {
@@ -123,8 +124,9 @@ const config = {
           },
           {
             href: 'https://github.com/wa0x6e/cal-heatmap',
-            label: 'GitHub',
             position: 'right',
+            className: 'github-link',
+            'aria-label': 'GitHub repository',
           },
         ],
       },
@@ -167,7 +169,7 @@ const config = {
           //   ],
           // },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Cal-Heatmap`,
+        copyright: `${new Date().getFullYear()} Cal-Heatmap  •  Released under MIT Licence`,
       },
       prism: {
         theme: lightCodeTheme,
@@ -181,6 +183,7 @@ const config = {
     '/cal-heatmap-doc/js/cal-heatmap.min.js',
     '/cal-heatmap-doc/js/Tooltip.min.js',
     '/cal-heatmap-doc/js/Legend.min.js',
+    '/cal-heatmap-doc/js/index-example.js',
   ],
   stylesheets: ['/cal-heatmap-doc/css/cal-heatmap.css'],
 };

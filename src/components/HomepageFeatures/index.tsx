@@ -12,53 +12,47 @@ const FeatureList: FeatureItem[] = [
     title: 'Date locale and timezone support',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Customize the calendar language, timezone and locale specific setting,
+        such as first day of the week
       </>
     ),
   },
   {
-    title: 'Date Navigation',
+    title: 'Animated Date Navigation',
+    description: (
+      <>Browse the calendar dynamically, or jump to a specific date </>
+    ),
+  },
+  {
+    title: 'Time granularity',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Customize the layout and time interval: years, months, weeks, days,
+        hours, minutes, and many more via plugins
       </>
     ),
   },
   {
-    title: 'Various time granularity',
+    title: 'Customizable',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
-  {
-    title: 'Animation',
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Customize the UI to your liking: cell size, padding, margin, color, cell
+        position, etc...
       </>
     ),
   },
   {
     title: 'Extensible',
     description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
+      <>Add more functionality to the calendar via a plugin system</>
     ),
   },
   {
-    title: 'Typescript',
+    title: 'Typescript and tests',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Written in typescript, ES6, and fully tested on real browsers via
+        Browserstack
       </>
     ),
   },

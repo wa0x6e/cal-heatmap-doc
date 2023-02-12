@@ -78,7 +78,7 @@ Total height can no be greater that the domain height
 
 ## `gutter`
 
-Space between each subLabel, on pixel
+Space between each subLabel, in pixel
 
 ```js
 gutter?: number,

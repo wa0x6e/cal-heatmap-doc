@@ -88,6 +88,99 @@
 #ex-2 .graph-label {
   font-size: 10px;
   font-weight: bold;
-  fill: #444;
   text-transform: uppercase;
+}
+
+#cal-heatmap-index {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+#cal-heatmap-index-toolbar {
+  display: flex;
+  text-align: left;
+  margin: 2rem auto 1rem;
+  opacity: 0;
+}
+
+#cal-heatmap-index-footer {
+  text-align: left;
+  margin: 0 auto 1rem;
+  opacity: 0;
+
+  display: inlilne-block;
+}
+
+#cal-heatmap-index-footer small {
+  opacity: 0.5;
+}
+
+#cal-heatmap-index-toolbar > div:nth-child(2) {
+  flex-grow: 1;
+  padding: 0 1rem;
+}
+
+#hero-example {
+  background: var(--ifm-hero-background-color);
+  display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1) inset,
+    0 -1px 2px 0 rgba(0, 0, 0, 0.1) inset;
+}
+
+[data-theme='dark'] #hero-example {
+  background: var(--ifm-hero-background-color);
+
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2) inset,
+    0 -2px 3px 0 rgba(0, 0, 0, 0.2) inset;
+}
+
+.hero {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(15 23 42 / 0.04)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+  flex-direction: column;
+}
+
+[data-theme='dark'] .hero {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(148 163 184 / 0.05)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+}
+
+#cal-heatmap-index-toolbar > div:nth-child(2) h4 {
+  padding-top: 4px;
+  margin: 0;
+}
+
+#cal-heatmap-index-toolbar .group-buttons .button:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+#cal-heatmap-index-toolbar .group-buttons .button:last-child {
+  border-radius: 0 5px 5px 0;
+  margin-left: -1px;
+}
+
+.github-link:before,
+[data-theme='dark'] .button:hover .github-link:before {
+  background: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB2aWV3Qm94PScwIDAgMjQgMjQnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHBhdGggZD0nTTEyIC4yOTdjLTYuNjMgMC0xMiA1LjM3My0xMiAxMiAwIDUuMzAzIDMuNDM4IDkuOCA4LjIwNSAxMS4zODUuNi4xMTMuODItLjI1OC44Mi0uNTc3IDAtLjI4NS0uMDEtMS4wNC0uMDE1LTIuMDQtMy4zMzguNzI0LTQuMDQyLTEuNjEtNC4wNDItMS42MUM0LjQyMiAxOC4wNyAzLjYzMyAxNy43IDMuNjMzIDE3LjdjLTEuMDg3LS43NDQuMDg0LS43MjkuMDg0LS43MjkgMS4yMDUuMDg0IDEuODM4IDEuMjM2IDEuODM4IDEuMjM2IDEuMDcgMS44MzUgMi44MDkgMS4zMDUgMy40OTUuOTk4LjEwOC0uNzc2LjQxNy0xLjMwNS43Ni0xLjYwNS0yLjY2NS0uMy01LjQ2Ni0xLjMzMi01LjQ2Ni01LjkzIDAtMS4zMS40NjUtMi4zOCAxLjIzNS0zLjIyLS4xMzUtLjMwMy0uNTQtMS41MjMuMTA1LTMuMTc2IDAgMCAxLjAwNS0uMzIyIDMuMyAxLjIzLjk2LS4yNjcgMS45OC0uMzk5IDMtLjQwNSAxLjAyLjAwNiAyLjA0LjEzOCAzIC40MDUgMi4yOC0xLjU1MiAzLjI4NS0xLjIzIDMuMjg1LTEuMjMuNjQ1IDEuNjUzLjI0IDIuODczLjEyIDMuMTc2Ljc2NS44NCAxLjIzIDEuOTEgMS4yMyAzLjIyIDAgNC42MS0yLjgwNSA1LjYyNS01LjQ3NSA1LjkyLjQyLjM2LjgxIDEuMDk2LjgxIDIuMjIgMCAxLjYwNi0uMDE1IDIuODk2LS4wMTUgMy4yODYgMCAuMzE1LjIxLjY5LjgyNS41N0MyMC41NjUgMjIuMDkyIDI0IDE3LjU5MiAyNCAxMi4yOTdjMC02LjYyNy01LjM3My0xMi0xMi0xMicvPjwvc3ZnPg==)
+    no-repeat;
+  content: '';
+  display: flex;
+  height: 24px;
+  width: 24px;
+}
+
+[data-theme='dark'] .github-link:before {
+  background: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB2aWV3Qm94PScwIDAgMjQgMjQnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHBhdGggZmlsbD0nI2ZmZicgZD0nTTEyIC4yOTdjLTYuNjMgMC0xMiA1LjM3My0xMiAxMiAwIDUuMzAzIDMuNDM4IDkuOCA4LjIwNSAxMS4zODUuNi4xMTMuODItLjI1OC44Mi0uNTc3IDAtLjI4NS0uMDEtMS4wNC0uMDE1LTIuMDQtMy4zMzguNzI0LTQuMDQyLTEuNjEtNC4wNDItMS42MUM0LjQyMiAxOC4wNyAzLjYzMyAxNy43IDMuNjMzIDE3LjdjLTEuMDg3LS43NDQuMDg0LS43MjkuMDg0LS43MjkgMS4yMDUuMDg0IDEuODM4IDEuMjM2IDEuODM4IDEuMjM2IDEuMDcgMS44MzUgMi44MDkgMS4zMDUgMy40OTUuOTk4LjEwOC0uNzc2LjQxNy0xLjMwNS43Ni0xLjYwNS0yLjY2NS0uMy01LjQ2Ni0xLjMzMi01LjQ2Ni01LjkzIDAtMS4zMS40NjUtMi4zOCAxLjIzNS0zLjIyLS4xMzUtLjMwMy0uNTQtMS41MjMuMTA1LTMuMTc2IDAgMCAxLjAwNS0uMzIyIDMuMyAxLjIzLjk2LS4yNjcgMS45OC0uMzk5IDMtLjQwNSAxLjAyLjAwNiAyLjA0LjEzOCAzIC40MDUgMi4yOC0xLjU1MiAzLjI4NS0xLjIzIDMuMjg1LTEuMjMuNjQ1IDEuNjUzLjI0IDIuODczLjEyIDMuMTc2Ljc2NS44NCAxLjIzIDEuOTEgMS4yMyAzLjIyIDAgNC42MS0yLjgwNSA1LjYyNS01LjQ3NSA1LjkyLjQyLjM2LjgxIDEuMDk2LjgxIDIuMjIgMCAxLjYwNi0uMDE1IDIuODk2LS4wMTUgMy4yODYgMCAuMzE1LjIxLjY5LjgyNS41N0MyMC41NjUgMjIuMDkyIDI0IDE3LjU5MiAyNCAxMi4yOTdjMC02LjYyNy01LjM3My0xMi0xMi0xMicvPjwvc3ZnPg==)
+    no-repeat;
+}
+
+.navbar__logo {
+  height: 1.75rem;
+}
+
+.hero-logo {
+  max-width: 120px;
+
+  margin: 1rem 0;
 }

@@ -171,7 +171,7 @@ This option accepts different value's type, see table below for usage.
 | `function` | Display the function's return value. The function takes the subDomain's timestamp, value and the label's SVG Element as argument | `` function (timestamp, value) { return `${value} items on ${new Date(date).toISOString()}`; } `` | `50 items on 2022-12-06T20:01:51.290Z` |
 
 :::tip
-dayjs `format()` is [`locale`](/options/date.md#locale) and timezone aware.
+dayjs `format()` is [`locale`](/options/date.md#locale) and [timezone](/options/date.md#timezone) aware.
 :::
 
 :::caution

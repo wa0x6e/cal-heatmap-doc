@@ -4,7 +4,6 @@ sidebar_position: 5
 ---
 
 import BrowserWindow from '@site/src/components/BrowserWindow';
-import CalHeatmap from '@site/src/components/CalHeatmap';
 
 Specify the calendar's time boundaries and settings
 
@@ -93,9 +92,11 @@ Default: `en`
 
 See the [list of supported locale](https://github.com/iamkun/dayjs/tree/dev/src/locale) on day.js repository.
 
+:::tip
 For performance reasons, only the `en` locale is included by default, and
 all other locales are loaded on-demand. You can save a few milliseconds by
-including the dayjs locale script directly in your `<head>`, e.g. `<script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/zh-cn.js"></script>`
+including the dayjs locale script directly in your `<head>`, e.g. `<script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/zh-cn.js"></script>`, after the cal-heatmap.js `<script>`
+:::
 
 ```js title="Using the french locale"
 const cal = new CalHeatmap();

@@ -384,7 +384,7 @@ cal.paint(
     range: 5,
     date: {
       start: new Date('2007-01-01'),
-      min: new Date('200-05-01'),
+      min: new Date('2000-05-01'),
       max: new Date('2020-05-01'),
       timezone: 'utc',
     },

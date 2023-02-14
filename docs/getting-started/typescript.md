@@ -13,7 +13,7 @@ Typescript declaration files are still work in progress, and may change in the f
 #### Install via NPM
 
 ```bash
-npm install cal-heatmap@4.0.0-beta.5
+npm install cal-heatmap@4.0.0-beta.6
 ```
 
 #### Import and use in your Typescript file

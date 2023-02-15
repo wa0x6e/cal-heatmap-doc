@@ -195,3 +195,17 @@ timezone?: string;
 ```
 
 Default: guessed from user browser.
+
+Accepts any string representing a [IANA timezone canonical name](https://en.wikipedia.org/wiki/Daylight_saving_time#IANA_time_zone_database).
+
+```js
+const cal = new CalHeatmap();
+cal.paint({
+  // highlight-next-line
+  date: { timezone: 'Europe/Paris' },
+});
+```
+
+:::info
+See the list of TZ database timezone [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+:::

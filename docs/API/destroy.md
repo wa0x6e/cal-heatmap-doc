@@ -3,7 +3,7 @@ title: destroy()
 sidebar_position: 4
 ---
 
-<p class="subhead">Destroy the calendar</p>
+<p className="subhead">Destroy the calendar</p>
 
 ```js
 const cal = new CalHeatmap();

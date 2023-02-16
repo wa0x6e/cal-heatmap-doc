@@ -3,7 +3,7 @@ title: extendDayjs()
 sidebar_position: 12
 ---
 
-<p class="subhead">Extend the dayjs library with plugins</p>
+<p className="subhead">Extend the dayjs library with plugins</p>
 
 ```js
 const cal = new CalHeatmap();

@@ -3,7 +3,7 @@ title: Events
 sidebar_position: 6
 ---
 
-<p class="subhead">Listen for events emitted by the calendar</p>
+<p className="subhead">Listen for events emitted by the calendar</p>
 
 ```js
 const cal = new CalHeatmap();

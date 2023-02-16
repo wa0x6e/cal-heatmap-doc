@@ -3,7 +3,7 @@ title: previous()
 sidebar_position: 2
 ---
 
-<p class="subhead">Shift the calendar by the given number of domains backward (in the past).</p>
+<p className="subhead">Shift the calendar by the given number of domains backward (in the past).</p>
 
 ```
 cal.previous(steps?: number): Promise<unknown>

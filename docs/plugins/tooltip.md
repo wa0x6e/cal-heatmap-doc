@@ -3,25 +3,39 @@ title: Tooltip
 sidebar_position: 2
 ---
 
-<p class="subhead">This plugin adds a tooltip when hovering over a subDomain's cell</p>
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<p className="subhead">This plugin adds a tooltip when hovering over a subDomain's cell</p>
 
 ## Install
 
-### NPM
-
-The plugin is built-in in CalHeatmap, just import the module with
-
-```js
-import { Tooltip } from 'cal-heatmap';
+```mdx-code-block
+<Tabs>
+  <TabItem value="cdn" label="CDN" default>
 ```
 
-### CDN
-
-Add the tooltip plugin script and its dependencies in your page's `<head>`
+Add the tooltip plugin and its dependendcy in your page's `<head>`, after cal-heatmap library `<script>`
 
 ```html
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/cal-heatmap@4.0.0-beta.7/dist/plugins/Tooltip.min.js"></script>
+```
+
+```mdx-code-block
+ </TabItem>
+ <TabItem value="npm" label="NPM">
+```
+
+The plugin is built-in in the core CalHeatmap, just import the module with
+
+```
+import { Tooltip } from 'cal-heatmap';
+```
+
+```mdx-code-block
+  </TabItem>
+</Tabs>
 ```
 
 <hr/>
@@ -30,8 +44,11 @@ Add the tooltip plugin script and its dependencies in your page's `<head>`
 
 ```js
 const cal = new CalHeatmap();
+// highlight-next-line
 cal.paint({}, [[Tooltip, TOOLTIP_OPTIONS]]);
 ```
+
+See [TooltipOptions](#tooltipoptions) for the full list of available options.
 
 ## TooltipOptions
 
@@ -43,7 +60,7 @@ interface TooltipOptions extends PluginOptions, PopperOptions {
 }
 ```
 
-### enabled
+### `enabled`
 
 Whether to enable the tooltip
 
@@ -51,7 +68,7 @@ Default: `true`
 
 To customize the tooltip's UI, look for `#ch-tooltip` in the CSS.
 
-### text
+### `text`
 
 A function returning the content of the tooltip
 

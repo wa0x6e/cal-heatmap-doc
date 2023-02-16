@@ -5,7 +5,7 @@ sidebar_position: 3
 
 import BrowserWindow from '@site/src/components/BrowserWindow';
 
-<p class="subhead">Specify all options related to the domain configuration</p>
+<p className="subhead">Specify all options related to the domain configuration</p>
 
 ```js
 type DomainOptions: {

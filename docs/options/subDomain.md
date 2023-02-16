@@ -5,7 +5,7 @@ sidebar_position: 4
 
 import BrowserWindow from '@site/src/components/BrowserWindow';
 
-<p class="subhead">Specify all options related to the subDomain configuration</p>
+<p className="subhead">Specify all options related to the subDomain configuration</p>
 
 ```js
 type subDomain: {

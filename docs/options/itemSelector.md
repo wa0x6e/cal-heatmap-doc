@@ -3,7 +3,7 @@ title: itemSelector
 sidebar_position: 1
 ---
 
-<p class="subhead">Specify where the calendar should be rendered</p>
+<p className="subhead">Specify where the calendar should be rendered</p>
 
 ```js
 itemSelector: Element | string;

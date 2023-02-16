@@ -6,7 +6,7 @@ id: options
 
 import BrowserWindow from '@site/src/components/BrowserWindow';
 
-<p class="subhead">Customize the UI and content of the calendar</p>
+<p className="subhead">Customize the UI and content of the calendar</p>
 
 The calendar can be customized by passing an `Options` object to the [`paint()`](/API/paint.md) method on the calendar instance.
 

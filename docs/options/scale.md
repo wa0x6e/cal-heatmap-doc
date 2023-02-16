@@ -7,7 +7,7 @@ import BrowserWindow from '@site/src/components/BrowserWindow';
 
 # scale
 
-<p class="subhead">Control how your data are represented on the heatmap</p>
+<p className="subhead">Control how your data are represented on the heatmap</p>
 
 :::warning Work in progress
 Documention for this option is incomplete, option is not final and may change before the final release

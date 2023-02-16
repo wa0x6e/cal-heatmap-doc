@@ -3,7 +3,7 @@ title: Tooltip
 sidebar_position: 2
 ---
 
-This plugin adds a tooltip when hovering over a subDomain's cell
+<p class="subhead">This plugin adds a tooltip when hovering over a subDomain's cell</p>
 
 ## Install
 

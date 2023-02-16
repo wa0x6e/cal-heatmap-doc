@@ -4,7 +4,7 @@ title: label
 
 import BrowserWindow from '@site/src/components/BrowserWindow';
 
-Specify all options related to the domain's label configuration
+<p class="subhead">Specify all options related to the domain's label configuration</p>
 
 ```js
 type LabelOptions: {

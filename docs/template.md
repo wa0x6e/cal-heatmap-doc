@@ -3,7 +3,7 @@ title: Template
 sidebar_position: 10
 ---
 
-Defines the structure and content of a subDomain
+<p class="subhead">Defines the structure and content of a subDomain</p>
 
 ## Introduction
 

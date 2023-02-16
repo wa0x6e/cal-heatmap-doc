@@ -3,7 +3,7 @@ title: API
 sidebar_position: 9
 ---
 
-Methods to interact with the calendar.
+<p class="subhead">Methods to interact with the calendar.</p>
 
 Unless mentionned, all API methods return a [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 

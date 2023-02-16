@@ -3,7 +3,7 @@ title: next()
 sidebar_position: 1
 ---
 
-Shift the calendar by the given number of domains forward (in the future).
+<p class="subhead">Shift the calendar by the given number of domains forward (in the future).</p>
 
 ```
 cal.next(steps?: number): Promise<unknown>

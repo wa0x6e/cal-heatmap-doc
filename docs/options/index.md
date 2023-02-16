@@ -4,7 +4,9 @@ sidebar_position: 3
 id: options
 ---
 
-Customize the UI and content of the calendar
+import BrowserWindow from '@site/src/components/BrowserWindow';
+
+<p class="subhead">Customize the UI and content of the calendar</p>
 
 The calendar can be customized by passing an `Options` object to the [`paint()`](/API/paint.md) method on the calendar instance.
 
@@ -32,3 +34,23 @@ type Options = {
 import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
+
+:::tip
+Throughout the documentation, you will see block like the following
+
+<BrowserWindow>
+
+```jsx live noInline
+const cal = new CalHeatmap();
+cal.paint({ range: 1 });
+
+render(<div id="cal-heatmap"></div>);
+```
+
+</BrowserWindow>
+
+These are _live editor_:
+you can edit the code inline, and see the result in live.
+
+Use them to test settings, and see what happen.
+:::

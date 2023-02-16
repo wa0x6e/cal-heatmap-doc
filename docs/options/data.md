@@ -3,7 +3,7 @@ title: data
 sidebar_position: 6
 ---
 
-Specify how to fetch and process the data used to fill the calendar
+<p class="subhead">Specify how to fetch and process the data used to fill the calendar</p>
 
 ```js
 type DataRecord = Record<string, string | number>;

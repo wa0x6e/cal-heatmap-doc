@@ -5,8 +5,7 @@ sidebar_position: 25
 
 # Migrating from 3.x
 
-The current v4 release is rewritten from the ground up, and have a _lot of major breaking changes_.
-{: .fs-6}
+<p class="subhead">The current v4 release is rewritten from the ground up, and have a lot of major breaking changes.</p>
 
 The last 3.x release was from October 2016,
 and was built on top of a vanilla JS codebase from 2012.

@@ -5,7 +5,7 @@ sidebar_position: 5
 
 import BrowserWindow from '@site/src/components/BrowserWindow';
 
-Specify the calendar's time boundaries and settings
+<p class="subhead">Specify the calendar's time boundaries and settings</p>
 
 ```js
 type DateOptions: {

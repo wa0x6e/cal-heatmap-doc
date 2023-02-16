@@ -3,7 +3,7 @@ title: paint()
 sidebar_position: 1
 ---
 
-Paint the calendar using the given Options and Plugins.
+<p class="subhead">Paint the calendar using the given Options and Plugins.</p>
 
 ```js
 const cal = new CalHeatmap();

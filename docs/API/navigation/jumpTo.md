@@ -3,7 +3,7 @@ title: jumpTo()
 sidebar_position: 3
 ---
 
-Scroll the calendar to the given date.
+<p class="subhead">Scroll the calendar to the given date.</p>
 
 ```
 cal.jumpTo(date: Date, reset: boolean): Promise<unknown>

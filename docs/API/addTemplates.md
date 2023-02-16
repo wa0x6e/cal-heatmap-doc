@@ -3,7 +3,7 @@ title: addTemplates()
 sidebar_position: 10
 ---
 
-Add a new subDomain template
+<p class="subhead">Add a new subDomain template</p>
 
 ```js
 addTemplates(Template[] | Template): void;

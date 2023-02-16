@@ -7,7 +7,7 @@ import BrowserWindow from '@site/src/components/BrowserWindow';
 
 # range
 
-Specify the number of domains to show
+<p class="subhead">Specify the number of domains to show</p>
 
 ```js
 range: number;

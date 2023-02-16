@@ -3,7 +3,7 @@ title: Legend
 sidebar_position: 2
 ---
 
-This plugin generates a legend
+<p class="subhead">This plugin generates a legend</p>
 
 ## Install
 

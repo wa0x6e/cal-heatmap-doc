@@ -2,7 +2,7 @@
 title: dimensions()
 ---
 
-Return the calendar's dimensions
+<p class="subhead">Return the calendar's dimensions</p>
 
 ```js
 type Dimensions = {

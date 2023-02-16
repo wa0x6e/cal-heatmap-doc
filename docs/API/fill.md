@@ -3,7 +3,7 @@ title: fill()
 sidebar_position: 2
 ---
 
-Update the calendar's data set
+<p class="subhead">Update the calendar's data set</p>
 
 ```js
 const cal = new CalHeatmap();

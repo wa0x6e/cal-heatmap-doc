@@ -4,7 +4,7 @@ title: subLabel
 
 # subLabel
 
-Specify all options related to the domain's subLabel configuration
+<p class="subhead">Specify all options related to the domain's subLabel configuration</p>
 
 ```js
 type SubLabelOptions = {

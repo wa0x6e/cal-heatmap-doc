@@ -129,7 +129,11 @@ render(<div id="legend-width"></div>);
 
 </BrowserWindow>
 
+### And more...
+
 :::info
 The legend uses [ObservaleHQ Plot library](https://github.com/observablehq/plot) under the hood.
 See [this article](https://observablehq.com/@d3/color-legend) for a more detailed and advanced customisation of the legend.
+
+You can find more supported options directly on the [library documentation](https://github.com/observablehq/plot#plotlegendscalename-options)
 :::

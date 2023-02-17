@@ -34,7 +34,7 @@ cal.paint(
     },
     date: { start: new Date('2012-01-01') },
     range: 1,
-    scale: { type: 'linear', scheme: 'PRGn', domain: [0, 40] },
+    scale: { color: { type: 'linear', scheme: 'PRGn', domain: [0, 40] } },
     domain: {
       type: 'year',
       label: { text: null },
@@ -107,7 +107,7 @@ cal.paint(
     },
     date: { start: new Date('2012-01-01') },
     range: 8,
-    scale: { type: 'linear', scheme: 'Oranges', domain: [0, 8] },
+    scale: { color: { type: 'linear', scheme: 'Oranges', domain: [0, 8] } },
     domain: {
       type: 'month',
     },
@@ -178,7 +178,7 @@ cal.paint(
     range: 5,
     itemSelector: '#ex-1',
     date: { start: new Date('2012-01-01') },
-    scale: { type: 'diverging', scheme: 'PRGn', domain: [-10, 15] },
+    scale: { color: { type: 'diverging', scheme: 'PRGn', domain: [-10, 15] } },
     domain: {
       type: 'month',
       padding: [10, 10, 10, 10],
@@ -289,9 +289,10 @@ cal.paint(
       gutter: 0,
     },
     scale: {
-      type: 'linear',
-      scheme: 'Purples',
-      domain: [0, 35],
+      opacity: {
+        baseColor: '#ee79bd',
+        domain: [0, 35],
+      },
     },
     itemSelector: '#ex-2',
   },
@@ -415,9 +416,11 @@ cal.paint(
       type: 'weekday',
     },
     scale: {
-      type: 'linear',
-      domain: [50000000, 500000000],
-      scheme: 'YlOrRd',
+      color: {
+        type: 'linear',
+        domain: [50000000, 500000000],
+        scheme: 'YlOrRd',
+      },
     },
     itemSelector: '#ex-stock',
   },

@@ -48,7 +48,9 @@ window.addEventListener(
 				y: 'temp_min',
 				groupY: 'min',
 			},
-			scale: { type: 'diverging', scheme: 'PRGn', domain: [-10, 20] },
+			scale: {
+				color: { type: 'diverging', scheme: 'PRGn', domain: [-10, 20] },
+			},
 			itemSelector: '#cal-heatmap-index',
 			domain: { type: intervals[intervalsIndex][0] },
 			subDomain: { type: intervals[intervalsIndex][1] },

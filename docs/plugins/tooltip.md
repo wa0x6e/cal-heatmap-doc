@@ -90,7 +90,7 @@ function (timestamp, value, dayjsDate) {
 - `value`: The value of the current subDomain, from your data set
 - `dayjsDate`: A locale/timezone aware `dayjs` object, provided for easier date manipulation and formatting.
 
-### Additional Popper options
+### And more...
 
 You can customize the underlying popper instance further,
 by passing the same object as [`createPopper`](https://popper.js.org/docs/v2/constructors/#options)'s `Options` argument.

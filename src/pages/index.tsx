@@ -68,6 +68,15 @@ function HomepageHeader() {
         <div id="cal-heatmap-index-footer">
           <small>Data may not be available for all timeframes</small>
         </div>
+
+        <div className="margin-vert--md">
+          <small>
+            <i>
+              Demo calendar may have some issues, due to pending React
+              implementation
+            </i>
+          </small>
+        </div>
       </div>
 
       <div className="container">

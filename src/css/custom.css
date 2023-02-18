@@ -35,44 +35,44 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-[data-theme='dark'] .cal-heatmap-container .graph-rect {
+.cal-heatmap-container[data-theme='dark'] .graph-rect {
   fill: #444950;
 }
 
-[data-theme='dark'] .cal-heatmap-container .subdomain-text {
+.cal-heatmap-container[data-theme='dark'] .subdomain-text {
   fill: #fff;
 }
 
-[data-theme='dark'] .cal-heatmap-container .graph-subdomain-group rect:hover {
+.cal-heatmap-container[data-theme='dark'] .graph-subdomain-group rect:hover {
   stroke: #636e7b;
 }
 
-[data-theme='dark'] .cal-heatmap-container rect.highlight {
+.cal-heatmap-container[data-theme='dark'] rect.highlight {
   stroke: #768390;
 }
 
-[data-theme='dark'] #ch-tooltip {
+#ch-tooltip[data-theme='dark'] {
   background: #636e7b;
   color: #cdd9e5;
 }
 
-[data-theme='light'] .cal-heatmap-container .graph-rect {
+.cal-heatmap-container .graph-rect {
   fill: #ededed;
 }
 
-[data-theme='light'] .cal-heatmap-container .subdomain-text {
+.cal-heatmap-container .subdomain-text {
   fill: #000;
 }
 
-[data-theme='light'] .cal-heatmap-container .graph-subdomain-group rect:hover {
+.cal-heatmap-container .graph-subdomain-group rect:hover {
   stroke: #000;
 }
 
-[data-theme='light'] .cal-heatmap-container rect.highlight {
+.cal-heatmap-container rect.highlight {
   stroke: #444;
 }
 
-[data-theme='light'] #ch-tooltip {
+#ch-tooltip {
   background: #222;
   color: #bbb;
 }

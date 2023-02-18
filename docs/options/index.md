@@ -28,6 +28,7 @@ type Options = {
   label: LabelOptions,
   animationDuration: number,
   scale: ScaleOptions,
+  theme: 'light' | 'dark',
 };
 ```
 

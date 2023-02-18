@@ -19,7 +19,7 @@ Add the tooltip plugin and its dependendcy in your page's `<head>`, after cal-he
 
 ```html
 <script src="https://unpkg.com/@popperjs/core@2"></script>
-<script src="https://unpkg.com/cal-heatmap@4.0.0-beta.7/dist/plugins/Tooltip.min.js"></script>
+<script src="https://unpkg.com/cal-heatmap@4.0.0-beta.9/dist/plugins/Tooltip.min.js"></script>
 ```
 
 ```mdx-code-block

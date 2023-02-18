@@ -6,6 +6,7 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 // @ts-ignore
 import CalHeatmapComponent from '@site/src/components/CalHeatmapComponent';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 import styles from './index.module.css';
 
@@ -25,7 +26,11 @@ function HomepageHeader() {
       </div>
 
       <div id="hero-example">
-        <CalHeatmapComponent />
+        <BrowserOnly>
+          {() => {
+            return <CalHeatmapComponent />;
+          }}
+        </BrowserOnly>
         <div id="cal-heatmap-index"></div>
         <div id="cal-heatmap-index-footer">
           <small>Data may not be available for all timeframes</small>

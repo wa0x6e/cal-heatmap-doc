@@ -212,7 +212,6 @@ const config = {
     '/js/cal-heatmap.min.js',
     '/js/Tooltip.min.js',
     '/js/Legend.min.js',
-    '/js/index-example.js',
   ],
   stylesheets: ['/css/cal-heatmap.css'],
 };

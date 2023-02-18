@@ -4,6 +4,8 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+// @ts-ignore
+import CalHeatmapComponent from '@site/src/components/CalHeatmapComponent';
 
 import styles from './index.module.css';
 
@@ -23,59 +25,10 @@ function HomepageHeader() {
       </div>
 
       <div id="hero-example">
-        <div id="cal-heatmap-index-toolbar">
-          <div className="group-buttons">
-            <a
-              id="index-zoom-out"
-              href=""
-              title="Zoom out"
-              className="button button--secondary button--secondary button--sm padding-vert--xs padding-horiz--sm"
-            >
-              -
-            </a>
-            <a
-              id="index-zoom-in"
-              href=""
-              title="Zoom in"
-              className="button button--secondary button--secondary button--sm padding-vert--xs padding-horiz--sm"
-            >
-              +
-            </a>
-          </div>
-          <div>
-            <h4>Seattle mininum temperature (°C)</h4>
-          </div>
-          <div className="group-buttons">
-            <a
-              title="Previous"
-              id="index-previous"
-              href="#"
-              className="button button--secondary button--secondary button--sm padding-vert--xs padding-horiz--sm"
-            >
-              ‹
-            </a>
-            <a
-              title="Next"
-              id="index-next"
-              href=""
-              className="button button--secondary button--secondary button--sm padding-vert--xs padding-horiz--sm"
-            >
-              ›
-            </a>
-          </div>
-        </div>
+        <CalHeatmapComponent />
         <div id="cal-heatmap-index"></div>
         <div id="cal-heatmap-index-footer">
           <small>Data may not be available for all timeframes</small>
-        </div>
-
-        <div className="margin-vert--md">
-          <small>
-            <i>
-              Demo calendar may have some issues, due to pending React
-              implementation
-            </i>
-          </small>
         </div>
       </div>
 

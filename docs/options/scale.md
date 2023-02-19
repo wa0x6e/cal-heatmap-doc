@@ -32,6 +32,10 @@ Your dataset can be represented either with a range of different colors, or with
 `color` and `opacity` are mutually exclusive, you should only use one.
 :::
 
+:::caution
+`domain` is always required
+:::
+
 <hr />
 
 ## `color`

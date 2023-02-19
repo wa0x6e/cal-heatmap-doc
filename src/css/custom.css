@@ -35,23 +35,23 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-.cal-heatmap-container[data-theme='dark'] .graph-rect {
+[data-theme='dark'] .cal-heatmap-container .graph-rect {
   fill: #444950;
 }
 
-.cal-heatmap-container[data-theme='dark'] .subdomain-text {
+[data-theme='dark'] .cal-heatmap-container .subdomain-text {
   fill: #fff;
 }
 
-.cal-heatmap-container[data-theme='dark'] .graph-subdomain-group rect:hover {
+[data-theme='dark'] .cal-heatmap-container .graph-subdomain-group rect:hover {
   stroke: #636e7b;
 }
 
-.cal-heatmap-container[data-theme='dark'] rect.highlight {
+[data-theme='dark'] .cal-heatmap-container rect.highlight {
   stroke: #768390;
 }
 
-#ch-tooltip[data-theme='dark'] {
+[data-theme='dark'] #ch-tooltip {
   background: #636e7b;
   color: #cdd9e5;
 }

@@ -3,10 +3,6 @@ title: theme
 sidebar_position: 50
 ---
 
-import BrowserWindow from '@site/src/components/BrowserWindow';
-
-# range
-
 <p className="subhead">Toggle between light and dark mode</p>
 
 ```js
@@ -19,13 +15,14 @@ Default: `light`
 
 ## Usage
 
-<BrowserWindow>
-
-```jsx live noInline
+```js
 const cal = new CalHeatmap();
-cal.paint({ theme: 'dark' }, [[Tooltip]]);
-
-render(<div id="cal-heatmap"></div>);
+// highlight-next-line
+cal.paint({ theme: 'light' });
 ```
 
-</BrowserWindow>
+:::info
+All examples and demos in this documentation uses CSS to switch
+between light and dark mode, instead of the `theme` option, due to the way
+the documentation engine works.
+:::

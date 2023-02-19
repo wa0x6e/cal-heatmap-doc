@@ -58,6 +58,15 @@ cal.paint(
         },
       },
     ],
+    [
+      Legend,
+      {
+        tickSize: 0,
+        width: 150,
+        itemSelector: '#ex-year-legend',
+        label: 'Seattle max temperature °C',
+      },
+    ],
   ]
 );
 
@@ -65,7 +74,7 @@ render(
   <div>
     <div id="ex-year" className="margin-bottom--md"></div>
     <a
-      className="button button--sm button--secondary"
+      className="button button--sm button--secondary margin-top--sm"
       href="#"
       onClick={e => {
         e.preventDefault();
@@ -75,7 +84,7 @@ render(
       ← Previous
     </a>
     <a
-      className="button button--sm button--secondary margin-left--xs"
+      className="button button--sm button--secondary margin-top--sm margin-left--xs"
       href="#"
       onClick={e => {
         e.preventDefault();
@@ -84,6 +93,7 @@ render(
     >
       Next →
     </a>
+    <div id="ex-year-legend" style={{ float: 'right' }}></div>
   </div>
 );
 ```
@@ -107,7 +117,13 @@ cal.paint(
     },
     date: { start: new Date('2012-01-01') },
     range: 8,
-    scale: { color: { type: 'linear', scheme: 'Oranges', domain: [0, 8] } },
+    scale: {
+      color: {
+        type: 'quantize',
+        scheme: 'Oranges',
+        domain: [0, 1, 2, 3, 4, 5, 6, 7],
+      },
+    },
     domain: {
       type: 'month',
     },
@@ -127,14 +143,23 @@ cal.paint(
         },
       },
     ],
+    [
+      Legend,
+      {
+        tickSize: 0,
+        width: 100,
+        itemSelector: '#ex-wind-legend',
+        label: 'Seattle wind (km/h)',
+      },
+    ],
   ]
 );
 
 render(
-  <div>
+  <div style={{ display: 'inline-block' }}>
     <div id="ex-wind"></div>
     <a
-      className="button button--sm button--secondary"
+      className="button button--sm button--secondary margin-top--sm"
       href="#"
       onClick={e => {
         e.preventDefault();
@@ -144,7 +169,7 @@ render(
       ← Previous
     </a>
     <a
-      className="button button--sm button--secondary margin-left--xs"
+      className="button button--sm button--secondary margin-left--xs margin-top--sm"
       href="#"
       onClick={e => {
         e.preventDefault();
@@ -153,6 +178,7 @@ render(
     >
       Next →
     </a>
+    <div id="ex-wind-legend" style={{ float: 'right' }}></div>
   </div>
 );
 ```

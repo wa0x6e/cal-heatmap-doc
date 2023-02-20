@@ -215,7 +215,7 @@ const sameRowDayTemplate = function (DateHelper) {
   };
 };
 const cal = new CalHeatmap();
-call.addTemplates(sameRowDayTemplate);
+cal.addTemplates(sameRowDayTemplate);
 cal.paint({
   range: 1,
   domain: { type: 'month' },

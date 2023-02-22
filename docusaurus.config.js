@@ -62,7 +62,7 @@ const config = {
       announcementBar: {
         id: 'beta_doc',
         content:
-          'Documentation is for <b>v4.0.0-Beta</b>, some section may still be incomplete',
+          'Documentation is for <b>v4.0.0-Beta</b>, API and options are not final',
         backgroundColor: '#ffebec',
         textColor: '#091E42',
         isCloseable: false,

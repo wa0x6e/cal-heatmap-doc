@@ -97,15 +97,15 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'template',
-            position: 'left',
-            label: 'Template',
-          },
-          {
-            type: 'doc',
             docId: 'showcase',
             position: 'left',
             label: 'Showcase',
+          },
+          {
+            type: 'doc',
+            docId: 'faq',
+            position: 'left',
+            label: 'FAQ',
           },
           {
             type: 'dropdown',

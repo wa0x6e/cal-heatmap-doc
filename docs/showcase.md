@@ -1,5 +1,6 @@
 ---
 title: Showcase
+sidebar_position: 30
 ---
 
 import BrowserWindow from '@site/src/components/BrowserWindow';

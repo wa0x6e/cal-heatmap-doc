@@ -21,6 +21,11 @@ const cal = new CalHeatmap();
 cal.paint({ theme: 'light' });
 ```
 
+:::note
+Theme is a togglable option, and not honoring the CSS `prefers-color-scheme` media query,
+as not all websites support dark/light mode.
+:::
+
 :::info
 All examples and demos in this documentation uses CSS to switch
 between light and dark mode, instead of the `theme` option, due to the way

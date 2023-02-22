@@ -238,3 +238,35 @@ Using a `function` will allow more fine-tuning of the label color, as you can us
 - a [d3-color scale](https://github.com/d3/d3-scale-chromatic)
 - a range of static colors (i.e `['#fff', '#eee', '#000']`, matching the [`scale's range`](/options/scale.md))
 - a custom function returning a color, computed from the background color (like the default value)
+
+## `sort`
+
+Sort order of the subDomains.
+
+```js
+sort: 'asc' | 'desc';
+```
+
+Default: `asc`
+
+<BrowserWindow>
+
+```jsx live noInline
+const cal = new CalHeatmap();
+// Change the sort value to see result
+cal.paint({
+  itemSelector: '#example-sort',
+  domain: { type: 'month' },
+  subDomain: { type: 'day', label: 'D', sort: 'asc' },
+});
+
+render(<div id="example-sort"></div>);
+```
+
+</BrowserWindow>
+
+:::caution Option scope
+This only affect the subDomain's order, not the Domain. See [`Domain.sort`](options/domain.md#sort) to also set the domains sort order.
+
+You can achieve a RTL result by setting both values to `desc`
+:::

@@ -66,10 +66,14 @@ Take a look at the css
 
 ### Show only weekdays, instead of all days of the week
 
-Use a [custom template](templates.md). You can see an example [here](template.md#days-subdomain-with-all-days-on-the-same-row)
+Use a [custom template](template.md). You can see an example [here](template.md#days-subdomain-with-all-days-on-the-same-row)
 
 ### Use a data source, behind authentication
 
 [`data.source`](options/data.md#source) is expecting a string url. When your API is behind authentication,
 or required additional request headers, you can use [`requestinit`](options/data.md#requestinit) to customize the http request,
 to add addition headers, change the request type to `POST`, etc ...
+
+### Right to Left (RTL) support
+
+Set both [`domain.sort`](options/domain/index.md#sort) and [`subDomain.sort`](options/subDomain.md#sort) to `desc`

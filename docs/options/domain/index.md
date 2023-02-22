@@ -160,5 +160,5 @@ render(<div id="example-sort"></div>);
 </BrowserWindow>
 
 :::caution Option scope
-This only affect the domain's order, not the subDomain.
+This only affect the domain's order, not the subDomain. See [`subDomain.sort`](options/subDomain.md#sort) to also set the subDomains sort order.
 :::

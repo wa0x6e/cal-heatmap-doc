@@ -1,5 +1,4 @@
 import React, { type ReactNode } from 'react';
-import CalHeatmap from 'cal-heatmap';
 
 export default function CalHeatmapComponent(): JSX.Element {
 	const intervals = {
@@ -29,7 +28,7 @@ export default function CalHeatmapComponent(): JSX.Element {
 		domain: { type: intervals[intervalsIndex][0] },
 		subDomain: { type: intervals[intervalsIndex][1] },
 	};
-	let cal = new CalHeatmap();
+	let cal = new window.CalHeatmap();
 
 	cal.on('resize', function (nw) {
 		window.d3
@@ -40,8 +39,6 @@ export default function CalHeatmapComponent(): JSX.Element {
 			.select('#cal-heatmap-index-footer')
 			.attr('style', `width: ${nw}px; opacity: 1`);
 	});
-
-	// paint(options);
 
 	cal.paint(
 		{
@@ -123,8 +120,18 @@ export default function CalHeatmapComponent(): JSX.Element {
 		intervalsIndex++;
 
 		cal.destroy().then(() => {
-			cal = new CalHeatmap();
+			cal = new window.CalHeatmap();
 			paint(options);
+
+			cal.on('resize', function (nw) {
+				window.d3
+					.select('#cal-heatmap-index-toolbar')
+					.attr('style', `width: ${nw}px; opacity: 1`);
+
+				window.d3
+					.select('#cal-heatmap-index-footer')
+					.attr('style', `width: ${nw}px; opacity: 1`);
+			});
 		});
 	}
 
@@ -144,8 +151,18 @@ export default function CalHeatmapComponent(): JSX.Element {
 		intervalsIndex--;
 
 		cal.destroy().then(() => {
-			cal = new CalHeatmap();
+			cal = new window.CalHeatmap();
 			paint(options);
+
+			cal.on('resize', function (nw) {
+				window.d3
+					.select('#cal-heatmap-index-toolbar')
+					.attr('style', `width: ${nw}px; opacity: 1`);
+
+				window.d3
+					.select('#cal-heatmap-index-footer')
+					.attr('style', `width: ${nw}px; opacity: 1`);
+			});
 		});
 	}
 

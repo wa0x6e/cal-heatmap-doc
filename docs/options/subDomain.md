@@ -266,7 +266,7 @@ render(<div id="example-sort"></div>);
 </BrowserWindow>
 
 :::caution Option scope
-This only affect the subDomain's order, not the Domain. See [`Domain.sort`](options/domain.md#sort) to also set the domains sort order.
+This only affect the subDomain's order, not the Domain. See [`Domain.sort`](options/domain/index.md#sort) to also set the domains sort order.
 
 You can achieve a RTL result by setting both values to `desc`
 :::

@@ -37,7 +37,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Customize the UI to your liking: cell size, padding, margin, color, cell
-        position, etc...
+        position, RTL, etc...
       </>
     ),
   },

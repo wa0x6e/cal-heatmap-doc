@@ -92,18 +92,15 @@ cal.paint({
 });
 ```
 
-Some tokens are available to customize your url,
+#### Injecting dynamic date
+
+2 special tokens are available to customize your url,
 in order to limit the data time range from your remote source.
 
-| Token       | Description                                                                                                                  | Example output             |
-| :---------- | :--------------------------------------------------------------------------------------------------------------------------- | :------------------------- |
-| `{t:start}` | Timestamp (in seconds)                                                                                                       | `1673388319`               |
-| `{t:end}`   | Timestamp (in seconds)                                                                                                       | `1673388319`               |
-| `{d:start}` | [ISO 8601 formatted Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString) | `2011-10-05T14:48:00.000Z` |
-| `{d:end}`   | [ISO 8601 formatted Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString) | `2011-10-05T14:48:00.000Z` |
+- `{{start=XXX}}` will be replaced by the start of the first subDomain of the calendar
+- `{{end=XXX}}` will be replaced by the end of the last subDomain of the calendar
 
-- `start` refers to the start of the first subDomain of the calendar
-- `end` refers to the end of the last subDomain of the calendar
+`XXX` should be replaced by any [dayjs format token](https://day.js.org/docs/en/display/format) ([Advanced tokens](https://day.js.org/docs/en/plugin/advanced-format) are also accepted)
 
 :::note
 The `start` and `end` time range are both inclusive.
@@ -116,9 +113,19 @@ The tokens' value will dynamically update on [navigation](/API/navigation/index.
 ```js title="Usage"
 const cal = new CalHeatmap();
 cal.paint({
+  date: { start: new Date('2020-01-01') },
   // highlight-next-line
-  data: { source: 'https://your-api.com/data?start={t:start}&end{t:end}' },
+  data: {
+    source:
+      'https://your-api.com/data?start={{start=YYYY-MM-DD}}&end={{end=[year-]YYYY}}',
+  },
 });
+```
+
+The above `date.source` will output something like:
+
+```
+https://your-api.com/data?start=2020-01-01&end=year-2020
 ```
 
 If the remote source is behind authentication, or requires additional request

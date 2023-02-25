@@ -371,7 +371,7 @@ render(
   <BrowserWindow>
 
 ```jsx live noInline
-const weekDaysTemplate = (DateHelper, options) => ({
+const weekDaysTemplate = DateHelper => ({
   name: 'weekday',
   parent: 'day',
   rowsCount: () => 5,
@@ -379,7 +379,7 @@ const weekDaysTemplate = (DateHelper, options) => ({
   mapping: (startTimestamp, endTimestamp) => {
     let weekNumber = 0;
     let x = -1;
-    const domainType = options.domain.type;
+
     return DateHelper.intervals(
       'day',
       startTimestamp,
@@ -393,16 +393,17 @@ const weekDaysTemplate = (DateHelper, options) => ({
           x += 1;
         }
 
+        if (date.format('d') === '0' || date.format('d') === '6') {
+          return null;
+        }
+
         return {
           t: ts,
           x,
-          y:
-            date.format('d') == 0 || date.format('d') === 6
-              ? -1
-              : date.format('d') - 1,
+          y: date.format('d') - 1,
         };
       })
-      .filter(n => n.y >= 0);
+      .filter(n => n !== null);
   },
 });
 const cal = new CalHeatmap();
@@ -444,7 +445,7 @@ cal.paint(
     },
     scale: {
       color: {
-        type: 'linear',
+        type: 'quantize',
         domain: [50000000, 500000000],
         scheme: 'YlOrRd',
       },
@@ -452,6 +453,7 @@ cal.paint(
     itemSelector: '#ex-stock',
   },
   [
+    [LegendLite, { itemSelector: '#ex-stock-legend', includeBlank: true }],
     [
       Tooltip,
       {
@@ -490,6 +492,14 @@ render(
     >
       Next →
     </a>
+    <div style={{ float: 'right', fontSize: 11, marginTop: '5px' }}>
+      Calm
+      <div
+        id="ex-stock-legend"
+        style={{ display: 'inline-block', margin: '0 8px' }}
+      ></div>
+      Busy
+    </div>
   </div>
 );
 ```

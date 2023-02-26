@@ -49,7 +49,7 @@ cal.paint(
     },
     subDomain: { type: 'day', radius: 2, label: (t, v) => v },
   },
-  [[Legend]]
+  [[Legend, { width: 500 }]]
 );
 
 render(<div id="ex-ordinal"></div>);

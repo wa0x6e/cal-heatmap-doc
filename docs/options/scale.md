@@ -291,6 +291,8 @@ Most use cases will use only the 4 most common types:
 - categorical
 - diverging
 
+See the [advanced section](/docs/advanced/scaleType) to learn more about the different type and their usage
+
 :::
 
 ## `opacity`
@@ -360,3 +362,7 @@ Take a look at their documentation for more advanced uses.
 
 Some part of the scale documentation are extracted from their own documentation.
 :::
+
+## More advanced guide
+
+You can read a more advanced guide about the various scale type in the [Advanced section](/docs/advanced/scaleType)

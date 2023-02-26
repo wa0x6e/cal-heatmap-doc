@@ -1,6 +1,6 @@
 ---
 title: FAQ
-sidebar_position: 35
+sidebar_position: 50
 ---
 
 ### How to change start of week to monday

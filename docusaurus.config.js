@@ -113,11 +113,11 @@ const config = {
             position: 'right',
             items: [
               {
-                html: 'v3.1.6',
+                html: 'v3.1.6 <small>(deprecated)</small>',
                 href: 'https://cal-heatmap.com/v3/index.html',
               },
               {
-                html: 'v2.2.3 <small>(dead)</small>',
+                html: 'v2.2.3 <small>(eol)</small>',
                 href: 'https://cal-heatmap.com/v2/index.html',
               },
             ],

@@ -32,9 +32,6 @@ function HomepageHeader() {
           }}
         </BrowserOnly>
         <div id="cal-heatmap-index"></div>
-        <div id="cal-heatmap-index-footer">
-          <small>Data may not be available for all timeframes</small>
-        </div>
       </div>
 
       <div className="container">

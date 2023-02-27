@@ -22,7 +22,7 @@ more similar to [github contribution calendar](https://docs.github.com/en/accoun
 Add the legend plugin in your page's `<head>`, after cal-heatmap library `<script>`
 
 ```html
-<script src="https://unpkg.com/cal-heatmap@4.0.0-beta.9/dist/plugins/LegendLite.min.js"></script>
+<script src="https://unpkg.com/cal-heatmap/dist/plugins/LegendLite.min.js"></script>
 ```
 
 ```mdx-code-block

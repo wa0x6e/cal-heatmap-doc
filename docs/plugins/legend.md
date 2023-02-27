@@ -19,7 +19,7 @@ import BrowserWindow from '@site/src/components/BrowserWindow';
 Add the legend plugin in your page's `<head>`, after cal-heatmap library `<script>`
 
 ```html
-<script src="https://unpkg.com/cal-heatmap@4.0.0-beta.9/dist/plugins/Legend.min.js"></script>
+<script src="https://unpkg.com/cal-heatmap/dist/plugins/Legend.min.js"></script>
 ```
 
 ```mdx-code-block

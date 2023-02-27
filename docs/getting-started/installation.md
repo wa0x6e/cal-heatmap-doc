@@ -25,8 +25,8 @@ Install the dependencies in your page `<head>`.
 Install the library in your page `<head>`.
 
 ```html
-<script src="https://unpkg.com/cal-heatmap@4.0.0-beta.9/dist/cal-heatmap.min.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/cal-heatmap@4.0.0-beta.9/dist/cal-heatmap.css"></script>
+<script src="https://unpkg.com/cal-heatmap/dist/cal-heatmap.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/cal-heatmap/dist/cal-heatmap.css"></script>
 ```
 
 ```mdx-code-block
@@ -35,7 +35,7 @@ Install the library in your page `<head>`.
 ```
 
 ```
-npm install cal-heatmap@4.0.0-beta.9
+npm install cal-heatmap
 ```
 
 ```mdx-code-block

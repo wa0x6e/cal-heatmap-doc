@@ -77,6 +77,20 @@ Default: `[]`
 See the `highlight` class in the CSS to customize its style
 :::
 
+```js
+const cal = new CalHeatmap();
+cal.paint({
+  date: {
+    // highlight-start
+    highlight: [
+      new Date('2020-01-15'),
+      new Date(), // Highlight today
+    ],
+    // highlight-end
+  },
+});
+```
+
 ## `locale`
 
 Date locale.

@@ -59,14 +59,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      announcementBar: {
-        id: 'beta_doc',
-        content:
-          'Documentation is for <b>v4.0.0-Beta</b>, API and options are not final',
-        backgroundColor: '#ffebec',
-        textColor: '#091E42',
-        isCloseable: false,
-      },
+      // announcementBar: {
+      //   id: 'beta_doc',
+      //   content:
+      //     'Documentation is for <b>v4.0.0-Beta</b>, API and options are not final',
+      //   backgroundColor: '#ffebec',
+      //   textColor: '#091E42',
+      //   isCloseable: false,
+      // },
       navbar: {
         title: 'Cal-Heatmap',
         logo: {
@@ -109,7 +109,7 @@ const config = {
           },
           {
             type: 'dropdown',
-            label: 'v4.0.0-beta 🚧',
+            label: 'v4.0.0',
             position: 'right',
             items: [
               {

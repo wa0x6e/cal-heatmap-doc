@@ -77,3 +77,7 @@ to add addition headers, change the request type to `POST`, etc ...
 ### Right to Left (RTL) support
 
 Set both [`domain.sort`](options/domain/index.md#sort) and [`subDomain.sort`](options/subDomain.md#sort) to `desc`
+
+### Reproduce a calendar in the Github contribution style
+
+See [Github showcase](showcase.md#github-profile-contribution-like)

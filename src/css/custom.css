@@ -97,6 +97,18 @@
   text-transform: uppercase;
 }
 
+#ex-ghDay-legend .graph-rect,
+#ex-ghDay .graph-rect {
+  fill: #2d333a;
+  outline: 1px solid rgba(255, 255, 255, 0.05);
+  outline-offset: -1px;
+}
+
+#ex-ghDay .graph-label {
+  font-size: 12px;
+  fill: #adbac7;
+}
+
 #cal-heatmap-index {
   margin: 0 auto;
   display: inline-block;

@@ -38,6 +38,15 @@ Install the library in your page `<head>`.
 npm install cal-heatmap
 ```
 
+Then inside your app
+
+```js
+import CalHeatmap from 'cal-heatmap';
+
+// Optionally import the CSS
+import 'cal-heatmap/cal-heatmap.css';
+```
+
 ```mdx-code-block
   </TabItem>
 </Tabs>

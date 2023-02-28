@@ -30,7 +30,7 @@ Add the legend plugin in your page's `<head>`, after cal-heatmap library `<scrip
 The plugin is built-in in the core CalHeatmap, just import the module with
 
 ```
-import { Legend } from 'cal-heatmap';
+import Legend from 'cal-heatmap/plugins/Legend';
 ```
 
 ```mdx-code-block

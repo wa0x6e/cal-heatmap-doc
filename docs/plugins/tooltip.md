@@ -30,7 +30,7 @@ Add the tooltip plugin and its dependendcy in your page's `<head>`, after cal-he
 The plugin is built-in in the core CalHeatmap, just import the module with
 
 ```
-import { Tooltip } from 'cal-heatmap';
+import Tooltip from 'cal-heatmap/plugins/Tooltip';
 ```
 
 ```mdx-code-block

@@ -28,7 +28,9 @@ type subDomain: {
 
 ## `type`
 
-SubDomain's type, representing a time unit
+SubDomain's type, representing a time unit.
+
+This is the time unit represented by each cell in the calendar.
 
 ```js
 type: string,
@@ -36,14 +38,184 @@ type: string,
 
 The `subDomain` should always be smaller than the `domain` type.
 
-### Built-in types
+Each subdomain type have their own layout (rows/columns count, etc ...)
 
-- `month`
-- `week`
-- `day`
-- `x_day`
-- `hour`
-- `minute`
+### `month`
+
+Shows all the months within the domain type
+
+Allowed domain type: `year`
+
+<BrowserWindow>
+
+```jsx live noInline
+const cal = new CalHeatmap();
+cal.paint({
+  range: 1,
+  itemSelector: '#example-month',
+  domain: { type: 'year' },
+  subDomain: { type: 'month', label: 'MM', width: 15, height: 15 },
+});
+
+render(<div id="example-month"></div>);
+```
+
+</BrowserWindow>
+
+### `week`
+
+Shows all the weeks within the domain type
+
+Allowed domain type: `year`, `month`
+
+<BrowserWindow>
+
+```jsx live noInline
+const cal = new CalHeatmap();
+cal.paint({
+  range: 1,
+  itemSelector: '#example-week',
+  domain: { type: 'year' },
+  subDomain: { type: 'week', label: 'ww', width: 15, height: 15 },
+});
+
+render(<div id="example-week"></div>);
+```
+
+</BrowserWindow>
+
+### `day`
+
+Shows all the days within the domain type
+
+Allowed domain type: `year`, `month`, `week`
+
+<BrowserWindow>
+
+```jsx live noInline
+const cal = new CalHeatmap();
+cal.paint({
+  range: 4,
+  itemSelector: '#example-day',
+  // Change to month or week to view result
+  domain: { type: 'month' },
+  subDomain: { type: 'day', label: 'DD' },
+});
+
+render(<div id="example-day"></div>);
+```
+
+</BrowserWindow>
+
+### `hour`
+
+Shows all the hours within the domain type
+
+Allowed domain type: `month`, `week`, `day`
+
+:::caution
+`year` domain is not allowed for performance issues.
+:::
+
+<BrowserWindow>
+
+```jsx live noInline
+const cal = new CalHeatmap();
+cal.paint({
+  range: 1,
+  itemSelector: '#example-hour',
+  // Change to month or week to view result
+  domain: { type: 'day' },
+  subDomain: { type: 'hour', label: 'HH' },
+});
+
+render(<div id="example-hour"></div>);
+```
+
+</BrowserWindow>
+
+### `minute`
+
+Shows all the minutes within the domain type
+
+Allowed domain type: `day`, `hour`
+
+:::caution
+Other domains are not allowed for performance issues.
+:::
+
+<BrowserWindow>
+
+```jsx live noInline
+const cal = new CalHeatmap();
+cal.paint({
+  range: 1,
+  itemSelector: '#example-minute',
+  // Change to hour to view result
+  domain: { type: 'hour' },
+  subDomain: { type: 'minute', label: 'mm' },
+});
+
+render(<div id="example-minute"></div>);
+```
+
+</BrowserWindow>
+
+There's 2 additional variants for the `day` type
+
+### `xDay`
+
+Shows all the days within the domain type, but from left to right, and top to bottom
+
+Allowed domain type: `year`, `month`, `week`
+
+<BrowserWindow>
+
+```jsx live noInline
+const cal = new CalHeatmap();
+cal.paint({
+  range: 4,
+  itemSelector: '#example-xday',
+  // Change to month or week to view result
+  domain: { type: 'month', gutter: 10, dynamicDimension: false },
+  subDomain: { type: 'xDay', label: 'DD' },
+});
+
+render(<div id="example-xday"></div>);
+```
+
+</BrowserWindow>
+
+### `ghDay`
+
+Shows all the days within the domain type, but domain start and end are rounded
+to the first and end of week of the month.
+
+:::caution
+First week of the month should contains at least 4 days, so this subDomain type may
+not always include all the days of the months, and may also includes days from adjacent months.
+:::
+
+This subDomain type ensure that there is no gap between domains, as opposed to just [`day`](#day)
+
+Allowed domain type: `month`
+
+<BrowserWindow>
+
+```jsx live noInline
+const cal = new CalHeatmap();
+cal.paint({
+  range: 6,
+  itemSelector: '#example-ghday',
+  // Change to month or week to view result
+  domain: { type: 'month', gutter: 2 },
+  subDomain: { type: 'ghDay', label: 'DD' },
+});
+
+render(<div id="example-ghday"></div>);
+```
+
+</BrowserWindow>
 
 :::tip
 You can create and add your own custom subDomain type, see the [`Template`](/template.md) section.

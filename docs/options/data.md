@@ -15,14 +15,16 @@ type DataOptions = {
   requestInit: object,
   x: string | ((datum: DataRecord) => number),
   y: string | ((datum: DataRecord) => number),
-  groupY: DataGroupType | ((values: number[]) => number),
+  groupY:
+    | DataGroupType
+    | ((values: (number | string | null)[]) => number | string | null),
 };
 ```
 
 The calendar is expecting an array of objects as input.  
 There is no expected pre-defined structure for the object,
 but it must at least have one or more property for the date,
-and another one for the value.
+and another one for the value, which is usually a number, but string are also accepted
 
 ```js title="Classic object"
 [
@@ -34,8 +36,8 @@ and another one for the value.
 
 ```js title="Using timestamp"
 [
-  { t: 1673388319933, p: 3, v: 58 },
-  { t: 1673388319934, p: 6, v: 1 },
+  { t: 1673388319933, p: 3, v: 'Asia' },
+  { t: 1673388319934, p: 6, v: 'Europe' },
   ...
 ];
 ```
@@ -239,13 +241,13 @@ Property name of the the value, or a function returning the value.
 Instruct the calendar how to extract the _value_ property from your data.
 
 ```js
-y: string | ((datum: DataRecord) => number),
+y: string | ((datum: DataRecord) => number | string),
 ```
 
 You can either pass a:
 
 - `string`: key name of the property holding the value, in your datum object. The value should be a number.
-- `function`: function taking the datum as argument, and should return the value, as a number.
+- `function`: function taking the datum as argument, and should return the value, as a number or a string
 
 #### Example
 
@@ -285,21 +287,29 @@ type DataGroupType = 'sum' | 'count' | 'min' | 'max' | 'median';
 ```
 
 ```js
-groupY: DataGroupType | ((values: number[]) => number),
+groupY:
+  | DataGroupType
+  | ((values: (number | string | null)[]) => number | string | null),
 ```
 
 You can either pass a:
 
-- `string`: name of a built-in aggregate function (see _DataGroupType_)
+- `string`: name of a built-in aggregate function (see _DataGroupType_), only available if your values are numeric
 - `function`: function taking an array of datum from the same subDomain, and should return a new aggregated value.
+
+Default: `sum`
+
+:::caution
+If your values are non-numeric, you have to use `count`, or implement your own aggregation strategy
+:::
 
 #### Example
 
 ```js title="data.js"
 var data = [
   { column1: '2012-01-01', column2: 3 },
-  { column1: '2012-01-01', column2: 3 },
-  { column1: '2012-01-02', column2: 3 },
+  { column1: '2012-01-01', column2: 4 },
+  { column1: '2012-01-02', column2: 5 },
 ];
 ```
 
@@ -323,9 +333,23 @@ cal.paint({
     y: 'column2',
     // highlight-start
     groupY: data => {
+      // data === [3, 4, 5]
       return data.reduce((a, b) => a + b, 0);
     },
     // highlight-end
   },
 });
 ```
+
+`groupY` also supports values with non-numeric type, such as
+
+```js title="data.js"
+var data = [
+  { column1: '2012-01-01', column2: 'Asia' },
+  { column1: '2012-01-01', column2: 'Europe' },
+  { column1: '2012-01-02', column2: 'Asia' },
+];
+```
+
+In that case, only the `count` DataGroupType will be available, and you should implement
+your own `groupY` function if you are grouping your values by another strategy.

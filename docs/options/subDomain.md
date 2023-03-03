@@ -189,12 +189,7 @@ render(<div id="example-xday"></div>);
 ### `ghDay`
 
 Shows all the days within the domain type, but domain start and end are rounded
-to the first and end of week of the month.
-
-:::caution
-First week of the month should contains at least 4 days, so this subDomain type may
-not always include all the days of the months, and may also includes days from adjacent months.
-:::
+to the first and end of week of the month, so that each column has the same number of days.
 
 This subDomain type ensure that there is no gap between domains, as opposed to just [`day`](#day)
 
@@ -208,14 +203,22 @@ cal.paint({
   range: 6,
   itemSelector: '#example-ghday',
   // Change to month or week to view result
-  domain: { type: 'month', gutter: 2 },
-  subDomain: { type: 'ghDay', label: 'DD' },
+  domain: { type: 'month', gutter: 15 },
+  subDomain: { type: 'ghDay', label: 'DD', width: 15, height: 15 },
 });
 
 render(<div id="example-ghday"></div>);
 ```
 
 </BrowserWindow>
+
+Note in the above example that the domains does not start and end exactly on the
+first and last day of each month, each column represent a full week, to avoid
+partially populated column seen in `xDay` type.
+
+:::caution
+First week of the month is computed as the week having at least 4 days in the week.
+:::
 
 :::tip
 You can create and add your own custom subDomain type, see the [`Template`](/template.md) section.

@@ -20,7 +20,7 @@ given subDomain cells.
 
 ## When to use
 
-By default, CalHeatmap ships with the `year`, `month`, `week`, `day`, `x_day`,
+By default, CalHeatmap ships with the `year`, `month`, `week`, `day`, `xDay`, `ghDay`,
 `hour` and `minute` templates.
 
 Each of these templates are pretty basic, but will be enough for most use cases.

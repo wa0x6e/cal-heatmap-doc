@@ -30,7 +30,7 @@ cal.paint(
       source: '../fixtures/seattle-weather.csv',
       type: 'csv',
       x: 'date',
-      y: 'temp_max',
+      y: d => +d['temp_max'],
       groupY: 'max',
     },
     date: { start: new Date('2012-01-01') },
@@ -113,7 +113,7 @@ cal.paint(
       source: '../fixtures/seattle-weather.csv',
       type: 'csv',
       x: 'date',
-      y: 'wind',
+      y: d => +d['wind'],
       groupY: 'max',
     },
     date: { start: new Date('2012-01-01') },
@@ -198,7 +198,7 @@ cal.paint(
       source: '../fixtures/seattle-weather.csv',
       type: 'csv',
       x: 'date',
-      y: 'temp_min',
+      y: d => +d['temp_min'],
       groupY: 'min',
     },
     verticalOrientation: true,
@@ -211,7 +211,7 @@ cal.paint(
       padding: [10, 10, 10, 10],
       label: { position: 'top' },
     },
-    subDomain: { type: 'x_day', radius: 2, width: 15, height: 15, label: 'D' },
+    subDomain: { type: 'xDay', radius: 2, width: 15, height: 15, label: 'D' },
   },
   [
     [
@@ -263,7 +263,7 @@ render(
 const cal = new CalHeatmap();
 let dayRowTemplate = (dateHelper, { domain }) => ({
   name: 'day_row',
-  level: 31,
+  allowedDomainType: ['month'],
   rowsCount() {
     return 1;
   },
@@ -306,7 +306,7 @@ cal.paint(
       source: '../fixtures/seattle-weather.csv',
       type: 'csv',
       x: 'date',
-      y: 'precipitation',
+      y: d => +d['precipitation'],
     },
     domain: { type: 'month', gutter: 5, label: { textAlign: 'start' } },
     subDomain: {
@@ -421,7 +421,7 @@ cal.paint(
       source: '../fixtures/DJIA.csv',
       type: 'csv',
       x: 'Date',
-      y: 'Volume',
+      y: d => +d['Volume'],
     },
     domain: {
       type: 'year',
@@ -518,7 +518,7 @@ cal.paint(
       source: '../fixtures/seattle-weather.csv',
       type: 'csv',
       x: 'date',
-      y: d => parseInt(d['temp_max']),
+      y: d => +d['temp_max'],
       groupY: 'max',
     },
     date: { start: new Date('2012-01-01') },

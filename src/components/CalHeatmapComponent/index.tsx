@@ -92,7 +92,7 @@ export default function CalHeatmapComponent(): JSX.Element {
 			source: './fixtures/seattle-weather.csv',
 			type: 'csv',
 			x: 'date',
-			y: 'temp_min',
+			y: d => +d['temp_min'],
 			groupY: 'min',
 		},
 		scale: scales[selectedOption],

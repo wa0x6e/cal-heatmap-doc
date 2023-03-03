@@ -98,7 +98,7 @@ cal.paint(
       type: 'month',
     },
     subDomain: {
-      type: 'x_day',
+      type: 'xDay',
       radius: 2,
       width: 35,
       height: 35,

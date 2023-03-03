@@ -109,7 +109,7 @@ const config = {
           },
           {
             type: 'dropdown',
-            label: 'v4.0.0',
+            label: 'v4',
             position: 'right',
             items: [
               {

@@ -133,6 +133,11 @@ https://your-api.com/data?start=2020-01-01&end=year-2020
 If the remote source is behind authentication, or requires additional request
 customization, see [requestInit](#requestinit).
 
+:::caution
+[`Fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) is used under the hood to load the remote resource.
+Ensure that your endpoint has [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) setup properly.
+:::
+
 ## `type`
 
 Parser used to interpret the data returned by your url source.

@@ -81,3 +81,11 @@ Set both [`domain.sort`](options/domain/index.md#sort) and [`subDomain.sort`](op
 ### Reproduce a calendar in the Github contribution style
 
 See [Github showcase](showcase.md#github-profile-contribution-like)
+
+### Does it work with React ?
+
+Yes, the homepage demo is a React Component, see the source code directly on the [documention repo](https://github.com/wa0x6e/cal-heatmap-doc/blob/main/src/components/CalHeatmapComponent/index.tsx)
+
+### Does it work with VueJS ?
+
+Yes, see a basic implementation on [this issue](https://github.com/wa0x6e/cal-heatmap/issues/320#issuecomment-1444609768)

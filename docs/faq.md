@@ -88,4 +88,4 @@ Yes, the homepage demo is a React Component, see the source code directly on the
 
 ### Does it work with VueJS ?
 
-Yes, see a basic implementation on [this issue](https://github.com/wa0x6e/cal-heatmap/issues/320#issuecomment-1444609768)
+Yes, see [this starter demo](https://github.com/wa0x6e/cal-heatmap-vue-starter)

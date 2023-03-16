@@ -39,11 +39,6 @@ cal.paint(
     domain: {
       type: 'year',
       label: { text: null },
-      subLabel: {
-        width: 30,
-        textAlign: 'start',
-        text: () => dayjs.weekdaysShort().map((d, i) => (i % 2 == 0 ? '' : d)),
-      },
     },
     subDomain: { type: 'day', radius: 2 },
     itemSelector: '#ex-year',
@@ -66,6 +61,14 @@ cal.paint(
         width: 150,
         itemSelector: '#ex-year-legend',
         label: 'Seattle max temperature °C',
+      },
+    ],
+    [
+      CalendarLabel,
+      {
+        width: 30,
+        textAlign: 'start',
+        text: () => dayjs.weekdaysShort().map((d, i) => (i % 2 == 0 ? '' : d)),
       },
     ],
   ]
@@ -534,11 +537,6 @@ cal.paint(
       type: 'month',
       gutter: 4,
       label: { text: 'MMM', textAlign: 'start', position: 'top' },
-      subLabel: {
-        width: 30,
-        textAlign: 'start',
-        text: () => dayjs.weekdaysShort().map((d, i) => (i % 2 == 0 ? '' : d)),
-      },
     },
     subDomain: { type: 'ghDay', radius: 2, width: 11, height: 11, gutter: 4 },
     itemSelector: '#ex-ghDay',
@@ -565,6 +563,15 @@ cal.paint(
         width: 11,
         height: 11,
         gutter: 4,
+      },
+    ],
+    [
+      CalendarLabel,
+      {
+        width: 30,
+        textAlign: 'start',
+        text: () => dayjs.weekdaysShort().map((d, i) => (i % 2 == 0 ? '' : d)),
+        padding: [25, 0, 0, 0],
       },
     ],
   ]

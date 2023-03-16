@@ -31,3 +31,7 @@ All examples and demos in this documentation uses CSS to switch
 between light and dark mode, instead of the `theme` option, due to the way
 the documentation engine works.
 :::
+
+#### Customize
+
+All dark theme properties can be customized via CSS, use the `[data-theme='dark']` prefix

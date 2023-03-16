@@ -94,3 +94,7 @@ function (timestamp, value, dayjsDate) {
 
 You can customize the underlying popper instance further,
 by passing the same object as [`createPopper`](https://popper.js.org/docs/v2/constructors/#options)'s `Options` argument.
+
+## Styling
+
+See `#ch-tooltip` properties in the CSS

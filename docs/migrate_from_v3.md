@@ -58,10 +58,6 @@ Instruct the calendar how to extract the value from your dataset
 
 Instruct the calendar how to aggregate values from same time range
 
-### `data.subLabel`
-
-Still experimental option, add a customizable secondary label to domain
-
 ### `subDomain.color`
 
 Dynamically color the subDomain's label

@@ -14,7 +14,6 @@ type DomainOptions: {
   padding: [number, number, number, number];
   dynamicDimension: boolean;
   label: LabelOptions;
-  subLabel: SubLabelOptions;
   sort: 'asc' | 'desc';
 }
 ```
@@ -122,16 +121,6 @@ label: LabelOptions;
 ```
 
 See the [Domain Label section](/options/domain/label.md) for more informations
-
-## `subLabel`
-
-Specify all options related to the domain’s subLabel
-
-```js
-subLabel: SubLabelOptions;
-```
-
-See the [SubLabel section](/options/domain/sublabel.md) for more informations
 
 ## `sort`
 

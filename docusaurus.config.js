@@ -213,6 +213,7 @@ const config = {
     '/js/Tooltip.min.js',
     '/js/Legend.min.js',
     '/js/LegendLite.min.js',
+    '/js/CalendarLabel.min.js',
   ],
   stylesheets: ['/css/cal-heatmap.css'],
 };

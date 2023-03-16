@@ -35,19 +35,19 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-[data-theme='dark'] .cal-heatmap-container .graph-rect {
+[data-theme='dark'] .ch-subdomain-bg {
   fill: #444950;
 }
 
-[data-theme='dark'] .cal-heatmap-container .subdomain-text {
+[data-theme='dark'] .ch-subdomain-text {
   fill: #fff;
 }
 
-[data-theme='dark'] .cal-heatmap-container .graph-subdomain-group rect:hover {
+[data-theme='dark'] .ch-subdomain-bg:hover {
   stroke: #636e7b;
 }
 
-[data-theme='dark'] .cal-heatmap-container rect.highlight {
+[data-theme='dark'] .ch-subdomain-bg.highlight {
   stroke: #768390;
 }
 
@@ -56,19 +56,19 @@
   color: #cdd9e5;
 }
 
-.cal-heatmap-container .graph-rect {
+.ch-subdomain-bg {
   fill: #ededed;
 }
 
-.cal-heatmap-container .subdomain-text {
+.ch-subdomain-text {
   fill: #000;
 }
 
-.cal-heatmap-container .graph-subdomain-group rect:hover {
+.ch-subdomain-bg:hover {
   stroke: #000;
 }
 
-.cal-heatmap-container rect.highlight {
+.ch-subdomain-bg.highlight {
   stroke: #444;
 }
 
@@ -81,30 +81,30 @@
   fill: rgb(0, 0, 0, 0.05);
 }
 
-[data-theme='dark'] #ex-1 .domain-background {
+[data-theme='dark'] #ex-1 .ch-domain-bg {
   fill: rgb(255, 255, 255, 0.08);
 }
 
-#ex-1 .graph-label {
+#ex-1 .ch-domain-text {
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-#ex-2 .graph-label {
+#ex-2 .ch-domain-text {
   font-size: 10px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-#ex-ghDay-legend .graph-rect,
-#ex-ghDay .graph-rect {
+#ex-ghDay-legend .ch-subdomain-bg,
+#ex-ghDay .ch-subdomain-bg {
   fill: #2d333a;
   outline: 1px solid rgba(255, 255, 255, 0.05);
   outline-offset: -1px;
 }
 
-#ex-ghDay .graph-label {
+#ex-ghDay .ch-domain-text {
   font-size: 12px;
   fill: #adbac7;
 }
@@ -237,4 +237,9 @@
     var(--ifm-color-emphasis-200) 0%,
     var(--ifm-color-emphasis-100) 100%
   );
+}
+
+#cal-label-position .ch-plugin-calendar-label-bg {
+  outline-offset: -1px;
+  outline: 1px solid grey;
 }

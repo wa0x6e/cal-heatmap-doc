@@ -18,13 +18,14 @@ type DataOptions = {
   groupY:
     | DataGroupType
     | ((values: (number | string | null)[]) => number | string | null),
+  defaultValue: null | number | string,
 };
 ```
 
 The calendar is expecting an array of objects as input.  
 There is no expected pre-defined structure for the object,
 but it must at least have one or more property for the date,
-and another one for the value, which is usually a number, but string are also accepted
+and another one for the value, which is usually a number, but string is also accepted
 
 ```js title="Classic object"
 [
@@ -358,3 +359,19 @@ var data = [
 
 In that case, only the `count` DataGroupType will be available, and you should implement
 your own `groupY` function if you are grouping your values by another strategy.
+
+## `defaultValue`
+
+Default value to use when your dataset does not have a value for a date.
+
+```js
+defaultValue: null | number | string,
+```
+
+Default: `null`
+
+:::tip
+The most common use case will be to set it to `0`
+
+This option used to be known as `considerMissingDataAsZero` in the previous versions
+:::

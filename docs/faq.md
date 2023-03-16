@@ -61,8 +61,8 @@ See [`fill` API](API/fill.md)
 
 Take a look at the css
 
-- `domain` label are controlled via `.graph-label`
-- `subDomain` text are controlled via `.subdomain-text`
+- `domain` label are controlled via `.ch-domain-text`
+- `subDomain` text are controlled via `.ch-subdomain-text`
 
 ### Show only weekdays, instead of all days of the week
 

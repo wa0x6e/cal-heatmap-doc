@@ -36,6 +36,10 @@ cal.paint({
 
 See [`locale`](https://day.js.org/docs/en/customization/customization) doc
 
+:::info
+This option was known as `startWeekOnMonday` in the previous version.
+:::
+
 ### How to change the calendar language
 
 Use the [locale](options/date.md#locale) option. For additional text such as tooltip text, a callback

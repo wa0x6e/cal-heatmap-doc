@@ -88,7 +88,9 @@ See [Github showcase](showcase.md#github-profile-contribution-like)
 
 ### Does it work with React ?
 
-Yes, the homepage demo is a React Component, see the source code directly on the [documention repo](https://github.com/wa0x6e/cal-heatmap-doc/blob/main/src/components/CalHeatmapComponent/index.tsx)
+Yes, see [this starter demo](https://github.com/wa0x6e/cal-heatmap-react-starter)
+
+The homepage demo is also a React Component, see the source code directly on the [documention repo](https://github.com/wa0x6e/cal-heatmap-doc/blob/main/src/components/CalHeatmapComponent/index.tsx)
 
 ### Does it work with VueJS ?
 

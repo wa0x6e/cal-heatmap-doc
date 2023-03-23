@@ -193,9 +193,14 @@ x: string | ((datum: DataRecord) => number),
 
 You can either pass a:
 
-- `string`: key name of the property holding the date, in your datum object. The date will be parsed using [`Date.parse`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date). Ensure that
-  the date format is ISO 8601 compliant.
+- `string`: key name of the property holding the date, in your datum object. The date will be parsed using [`Date.parse`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date).
 - `function`: function taking the datum as argument, and should return a timestamp
+
+:::caution
+If your date is a string (e.g. '2020-01-01T00:00:00'), ensure that its format is [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) compliant (`YYYY-MM-DDTHH:mm:ss.sssZ`), or it may lead to inconsistency/precision loss.
+
+If possible, we recommend to always use timestamp, to avoid all timezone related issues.
+:::
 
 #### Example
 

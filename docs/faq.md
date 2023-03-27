@@ -95,3 +95,7 @@ The homepage demo is also a React Component, see the source code directly on the
 ### Does it work with VueJS ?
 
 Yes, see [this starter demo](https://github.com/wa0x6e/cal-heatmap-vue-starter)
+
+### Does it work on NodeJS ?
+
+The script requires a DOM Element. As long as your app have a virtual DOM Element, it should work.

@@ -172,7 +172,7 @@ cal.paint({
   domain: { label: { height: 50 } },
 });
 
-render(<div id="ex-rotate"></div>);
+render(<div id="ex-height"></div>);
 ```
 
 </BrowserWindow>

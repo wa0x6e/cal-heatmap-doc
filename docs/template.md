@@ -223,6 +223,6 @@ cal.paint({
 });
 ```
 
-### Days subDomain, showinng only the weekdays
+### Days subDomain, showing only the weekdays
 
 See [Showcase](/showcase.md)

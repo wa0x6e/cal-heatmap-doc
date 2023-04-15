@@ -150,7 +150,7 @@ This function is used to bind your data to a subDomain
 - If each subDomain is a weekday, the function should return the timestamp for the start of that day (`00:00AM`), and return `null` for a weekend.
 
 :::tip
-Take a look at the built-in templates on the [github](https://github.com/wa0x6e/cal-heatmap/tree/master/src/calendar/templates) repository, for real-world examples.
+Take a look at the built-in templates on the [github](https://github.com/wa0x6e/cal-heatmap/tree/master/src/templates) repository, for real-world examples.
 :::
 
 <hr/>

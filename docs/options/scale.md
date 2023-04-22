@@ -82,7 +82,7 @@ cal.paint({
   date: { start: new Date('2012-01-01') },
   scale: {
     color: {
-      // Try some values: Purple, Blues, Turbo, Magma, etc ...
+      // Try some values: Purples, Blues, Turbo, Magma, etc ...
       scheme: 'Cool',
       type: 'linear',
       domain: [0, 30],

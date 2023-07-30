@@ -99,7 +99,7 @@ key?: string;
 
 ```js
 const cal = new CalHeatmap();
-cla.paint({}, [
+cal.paint({}, [
   // highlight-next-line
   [CalendarLabel, { position: 'top', key: 'top' }],
   // highlight-next-line

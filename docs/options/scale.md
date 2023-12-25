@@ -117,7 +117,7 @@ range: string[] | d3-scale-chromatic-scheme
 
 Accepts an array of colors, or a [d3 color scheme function](https://github.com/d3/d3-scale-chromatic).
 
-When using an array of colors, it expects a minimum of 2 colors.
+When using an array of colors, it expects a minimum of 2 colors. Recognized color name can be any value accepted by CSS, such as name (`red`), a hexadecimal color code (`#ff0000`), or rgb (`rgb(0, 0, 255)`).
 
 ```js title="Using an array of colors"
 const cal = new CalHeatmap();

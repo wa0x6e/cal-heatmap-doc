@@ -7,7 +7,7 @@ sidebar_position: 6
 
 ```js
 type DataRecord = Record<string, string | number>;
-type DataGroupType = 'sum' | 'count' | 'min' | 'max' | 'median';
+type DataGroupType = 'sum' | 'count' | 'min' | 'max' | 'average';
 
 type DataOptions = {
   source: string | DataRecord[],
@@ -294,7 +294,7 @@ cal.paint({
 Aggregate function, to group all values from the same subDomain.
 
 ```js
-type DataGroupType = 'sum' | 'count' | 'min' | 'max' | 'median';
+type DataGroupType = 'sum' | 'count' | 'min' | 'max' | 'average';
 ```
 
 ```js

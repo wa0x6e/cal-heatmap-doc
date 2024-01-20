@@ -289,6 +289,21 @@ cal.paint({
 });
 ```
 
+:::caution
+When using a [`source`](#source) other than a local javascript object, there is no auto-casting, and all values will be parsed as `string`.
+If your value is a number, consider using a function to cast it properly, e.g.:
+
+```js
+y: (datum) => +datum['key_name']
+```
+
+instead of just 
+
+```js
+y: 'key_name'
+```
+:::
+
 ## `groupY`
 
 Aggregate function, to group all values from the same subDomain.
